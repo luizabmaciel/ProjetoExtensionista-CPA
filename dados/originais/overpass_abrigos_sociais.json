@@ -1,0 +1,117 @@
+{
+ "fonte": "https://overpass-api.de/api/interpreter",
+ "licenca": "ODbL - © OpenStreetMap contributors",
+ "coletado_em": "2026-11-09T02:42:28+00:00",
+ "categoria": "abrigos_sociais",
+ "consulta": "[out:json][timeout:120];\narea[\"name\"=\"Porto Alegre\"][\"boundary\"=\"administrative\"][\"admin_level\"=\"8\"]->.a;\n(\nnwr[\"social_facility\"=\"shelter\"](area.a);\n);\nout center tags;",
+ "resposta": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-11-09T02:40:35Z",
+   "timestamp_areas_base": "2026-11-08T20:04:49Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 5404423950,
+    "lat": -30.0718111,
+    "lon": -51.2373973,
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "1372",
+     "addr:postcode": "90840-690",
+     "addr:street": "Avenida Padre Cacique",
+     "addr:suburb": "Praia de Belas",
+     "amenity": "social_facility",
+     "name": "Abrigo Cônego Paulo De Nadal",
+     "social_facility": "shelter",
+     "social_facility:for": "disabled",
+     "wheelchair": "yes"
+    }
+   },
+   {
+    "type": "node",
+    "id": 8890280357,
+    "lat": -30.1209347,
+    "lon": -51.2101654,
+    "tags": {
+     "addr:housenumber": "696",
+     "addr:street": "Rua Atílio Supertti",
+     "amenity": "social_facility",
+     "building": "yes",
+     "name": "Casa do Migrante Guadalupe",
+     "operator": "Associação Beneficente São Carlos - CIBAI Migrações",
+     "phone": "+55 51 3226-8800",
+     "social_facility": "shelter",
+     "social_facility:for": "migrant",
+     "website": "https://www.vaticannews.va/pt/igreja/news/2021-06/porto-alegre-ganha-casa-de-acolhida-a-migrantes.html"
+    }
+   },
+   {
+    "type": "way",
+    "id": 208171935,
+    "center": {
+     "lat": -30.0482956,
+     "lon": -51.1784077
+    },
+    "tags": {
+     "addr:housenumber": "1707",
+     "addr:postcode": "90690-000",
+     "addr:street": "Rua Doutor Salvador França",
+     "alt_name": "Casa de Passagem Nova Vida",
+     "amenity": "social_facility",
+     "building": "yes",
+     "name": "Pensão Nova Vida",
+     "opening_hours": "24/7",
+     "operator": "PMPA",
+     "phone": "+55 51 3334-9398",
+     "social_facility": "shelter",
+     "social_facility:for": "mental_health",
+     "source": "FZB"
+    }
+   },
+   {
+    "type": "way",
+    "id": 288381201,
+    "center": {
+     "lat": -30.0717386,
+     "lon": -51.2374889
+    },
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "1372",
+     "addr:postcode": "90840-690",
+     "addr:street": "Avenida Padre Cacique",
+     "addr:suburb": "Praia de Belas",
+     "amenity": "social_facility",
+     "building": "yes",
+     "name": "Abrigo Cônego Paulo De Nadal",
+     "phone": "+55 51 3233-3164",
+     "social_facility": "shelter",
+     "social_facility:for": "disabled",
+     "wheelchair": "yes"
+    }
+   },
+   {
+    "type": "way",
+    "id": 419342137,
+    "center": {
+     "lat": -30.0197814,
+     "lon": -51.2112073
+    },
+    "tags": {
+     "addr:housenumber": "215",
+     "addr:street": "Rua Comendador Azevedo",
+     "amenity": "social_facility",
+     "building": "yes",
+     "name": "Albergue Municipal",
+     "social_facility": "shelter",
+     "social_facility:for": "homeless",
+     "website": "http://www2.portoalegre.rs.gov.br/fasc/default.php?p_secao=88"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,2774 @@
+{
+ "fonte": "https://overpass-api.de/api/interpreter",
+ "licenca": "ODbL - © OpenStreetMap contributors",
+ "coletado_em": "2026-11-09T00:50:42+00:00",
+ "categoria": "saude",
+ "consulta": "[out:json][timeout:120];\narea[\"name\"=\"Porto Alegre\"][\"boundary\"=\"administrative\"][\"admin_level\"=\"8\"]->.a;\n(\nnwr[\"amenity\"~\"^(hospital|clinic)$\"](area.a);\nnwr[\"healthcare\"=\"hospital\"](area.a);\n);\nout center tags;",
+ "resposta": {
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+   "timestamp_osm_base": "2026-11-09T00:49:27Z",
+   "timestamp_areas_base": "2026-11-08T20:04:49Z",
+   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+   {
+    "type": "node",
+    "id": 476647429,
+    "lat": -30.037137,
+    "lon": -51.1982455,
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "400",
+     "addr:postcode": "90420-020",
+     "addr:street": "Rua Professor Álvaro Alvim",
+     "addr:suburb": "Rio Branco",
+     "amenity": "hospital",
+     "healthcare": "hospital",
+     "name": "Unidade Álvaro Alvim - HCPA",
+     "operator": "Hospital de Clínicas de Porto Alegre",
+     "ref:CNES": "7145594",
+     "ref:vatin": "BR87020517000201"
+    }
+   },
+   {
+    "type": "node",
+    "id": 598724565,
+    "lat": -30.0428889,
+    "lon": -51.126231,
+    "tags": {
+     "access": "yes",
+     "amenity": "clinic",
+     "name": "Estratégia Saúde da Família Tijuca",
+     "phone": "+55 51 3386-4341"
+    }
+   },
+   {
+    "type": "node",
+    "id": 1423330153,
+    "lat": -30.0327042,
+    "lon": -51.1781895,
+    "tags": {
+     "addr:housenumber": "569",
+     "addr:postcode": "90470-340",
+     "addr:street": "Avenida Soledade",
+     "addr:suburb": "Três Figueiras",
+     "amenity": "hospital",
+     "emergency": "yes",
+     "healthcare": "hospital",
+     "name": "MedCenter",
+     "phone": "+55 51 3378 9999",
+     "ref:CNES": "3019721",
+     "ref:vatin": "BR88625686003849",
+     "website": "https://www.medcenter.com.br/"
+    }
+   },
+   {
+    "type": "node",
+    "id": 2087827552,
+    "lat": -30.0380214,
+    "lon": -51.2197265,
+    "tags": {
+     "addr:housenumber": "651",
+     "addr:postcode": "90040-000",
+     "addr:street": "Avenida João Pessoa",
+     "amenity": "hospital",
+     "healthcare": "hospital",
+     "name": "Policlínica Militar de Porto Alegre",
+     "name:en": "Porto Alegre's Military Policlininc",
+     "ref:CNES": "915742",
+     "ref:vatin": "BR09544774000158"
+    }
+   },
+   {
+    "type": "node",
+    "id": 2274207744,
+    "lat": -30.0982586,
+    "lon": -51.2508517,
+    "tags": {
+     "addr:housenumber": "155",
+     "addr:postcode": "91900-590",
+     "addr:street": "Rua Doutor Castro de Menezes",
+     "addr:suburb": "Cristal",
+     "alt_name": "HBM-PA",
+     "amenity": "hospital",
+     "fixme": "Detalhar como poligonos.",
+     "healthcare": "hospital",
+     "name": "Hospital da Brigada Militar de Porto Alegre",
+     "name:en": "Military Hospital",
+     "official_name": "Hospital da Brigada Militar de Porto Alegre",
+     "operator:ref:vatin": "BR87934675000196",
+     "phone": "+55 51 3288-3500",
+     "ref:CNES": "2237156",
+     "start_date": "1971",
+     "wheelchair": "yes",
+     "wikidata": "Q10298510",
+     "wikipedia": "pt:Hospital da Brigada Militar de Porto Alegre"
+    }
+   },
+   {
+    "type": "node",
+    "id": 2503991372,
+    "lat": -30.0588925,
+    "lon": -51.2015833,
+    "tags": {
+     "addr:housenumber": "235",
+     "addr:postcode": "90640-200",
+     "addr:street": "Rua Paulino Chaves",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Clínica Especializada em Comunicação",
+     "operator": "Instituição Frei Pacífico",
+     "shop": "hearing_aids",
+     "start_date": "1974"
+    }
+   },
+   {
+    "type": "node",
+    "id": 2514058436,
+    "lat": -29.9895875,
+    "lon": -51.1066479,
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "180",
+     "addr:postcode": "91160-440",
+     "addr:street": "Rua João Paris",
+     "addr:suburb": "Sarandi",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "loc_name": "Posto de Saúde Santo Agostinho",
+     "name": "UBS Santo Agostinho",
+     "official_name": "Unidade Básica de Saúde Santo Agostinho",
+     "operator": "GHC",
+     "operator:ref:vatin": "BR92963560000160",
+     "ref:CNES": "3927997"
+    }
+   },
+   {
+    "type": "node",
+    "id": 2697121811,
+    "lat": -30.039039,
+    "lon": -51.1761911,
+    "tags": {
+     "addr:street": "Avenida Protásio Alves",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Laboratório do Pé"
+    }
+   },
+   {
+    "type": "node",
+    "id": 3761040479,
+    "lat": -30.1105747,
+    "lon": -51.1103058,
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "5120",
+     "addr:postcode": "91560-000",
+     "addr:street": "Estrada João de Oliveira Remião",
+     "addr:suburb": "Lomba do Pinheiro",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "UPA - Pronto Atendimento Lomba do Pinheiro",
+     "opening_hours": "24/7",
+     "phone": "+55 51 3319-4850",
+     "wheelchair": "limited"
+    }
+   },
+   {
+    "type": "node",
+    "id": 3779014457,
+    "lat": -30.0781266,
+    "lon": -51.2172103,
+    "tags": {
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "COR Mãe de Deus"
+    }
+   },
+   {
+    "type": "node",
+    "id": 3908571221,
+    "lat": -30.1236259,
+    "lon": -51.1077511,
+    "tags": {
+     "amenity": "clinic",
+     "name": "Unidade de Saúde SUS"
+    }
+   },
+   {
+    "type": "node",
+    "id": 4117912913,
+    "lat": -30.0102068,
+    "lon": -51.1483849,
+    "tags": {
+     "addr:street": "Avenida Assis Brasil",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "MultiVacinas",
+     "phone": "+55 51 99950-8056"
+    }
+   },
+   {
+    "type": "node",
+    "id": 4117912914,
+    "lat": -30.0102009,
+    "lon": -51.1482663,
+    "tags": {
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Unimed"
+    }
+   },
+   {
+    "type": "node",
+    "id": 4117912915,
+    "lat": -30.010212,
+    "lon": -51.1484902,
+    "tags": {
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Unimed"
+    }
+   },
+   {
+    "type": "node",
+    "id": 4258004209,
+    "lat": -30.1192111,
+    "lon": -51.1091716,
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "6111",
+     "addr:postcode": "91560-000",
+     "addr:street": "Estrada João de Oliveira Remião",
+     "addr:suburb": "Lomba do Pinheiro",
+     "amenity": "clinic",
+     "name": "SUS Unidade de Saúde.",
+     "phone": "+55 51 3319-7126"
+    }
+   },
+   {
+    "type": "node",
+    "id": 4432817120,
+    "lat": -30.0706808,
+    "lon": -51.169658,
+    "tags": {
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Posto de Saúde São José"
+    }
+   },
+   {
+    "type": "node",
+    "id": 4585894410,
+    "lat": -30.037603,
+    "lon": -51.2106716,
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "1040",
+     "addr:street": "Avenida Venâncio Aires",
+     "addr:suburb": "Cidade Baixa",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Unimed"
+    }
+   },
+   {
+    "type": "node",
+    "id": 4763286051,
+    "lat": -30.0387556,
+    "lon": -51.205235,
+    "tags": {
+     "addr:floor": "2",
+     "addr:housenumber": "543",
+     "addr:street": "Rua São Manoel",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "level": "2",
+     "name": "Banco de Sangue do Hospital de Clínicas"
+    }
+   },
+   {
+    "type": "node",
+    "id": 4980102145,
+    "lat": -30.0152547,
+    "lon": -51.1108493,
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "3492",
+     "addr:street": "Avenida Baltazar de Oliveira Garcia",
+     "addr:suburb": "Jardim Leopoldina",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "SOS Consultas Médicas"
+    }
+   },
+   {
+    "type": "node",
+    "id": 4980121128,
+    "lat": -30.0106019,
+    "lon": -51.1565328,
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "3065",
+     "addr:postcode": "91010-007",
+     "addr:street": "Avenida Assis Brasil",
+     "addr:suburb": "Cristo Redentor",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "SOS Consultas Medicas",
+     "phone": "+55 51 3920-1000",
+     "ref:CNES": "9108874",
+     "ref:vatin": "BR89620298001207",
+     "website": "https://www.sosconsultasmedicas.com.br/"
+    }
+   },
+   {
+    "type": "node",
+    "id": 5012815078,
+    "lat": -30.0247191,
+    "lon": -51.1971249,
+    "tags": {
+     "addr:housenumber": "80",
+     "addr:street": "Rua Eudoro Berlink",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Sono - Clínica do Sono",
+     "phone": "+55 51 3022-2282",
+     "website": "https://www.sono.com.br/"
+    }
+   },
+   {
+    "type": "node",
+    "id": 5160205840,
+    "lat": -30.0288762,
+    "lon": -51.2027161,
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:country": "BR",
+     "addr:housenumber": "270-905",
+     "addr:postcode": "90430-010",
+     "addr:street": "Rua Doutor Florêncio Ygartua",
+     "addr:suburb": "Moinhos de Vento",
+     "amenity": "clinic",
+     "contact:email": "dralancp@gmail.com",
+     "contact:facebook": "https://www.facebook.com/Dr-Álan-Soares-da-Silveira-Cirurgião-Plástico-377185012400920",
+     "contact:phone": "+55 51 3028-2027",
+     "contact:website": "http://www.portoalegreplastica.com.br",
+     "contact:youtube": "https://www.youtube.com/channel/UCFvs-vwxxGyGF1FISfYZ3_Q",
+     "description": "O Dr. Álan tem seu título de cirurgião plastico conferido pela Sociedade Brasileira de Cirurgia Plástica, pelo Conselho Federal de Medicina (CFM – CREMERS), pela Associação Médica Brasileira (AMB) e pelo Ministério de Educação e Cultura (MEC).",
+     "emergency": "no",
+     "healthcare": "hospital",
+     "healthcare:speciality": "surgery;plastic_surgery",
+     "name": "Dr. Alan Silveira - Cirurgião Plástico",
+     "operator": "Cirurgião Plástico"
+    }
+   },
+   {
+    "type": "node",
+    "id": 6111929517,
+    "lat": -30.0870671,
+    "lon": -51.2065358,
+    "tags": {
+     "addr:housenumber": "175",
+     "addr:postcode": "91720-440",
+     "addr:street": "Praça Simões Lopes Neto",
+     "addr:suburb": "Teresópolis",
+     "amenity": "hospital",
+     "emergency": "yes",
+     "healthcare": "hospital",
+     "name": "Hospital Santa Ana",
+     "note": "Em área do Hospital Espírita",
+     "operator": "Sistema de Saúde Mãe de Deus",
+     "phone": "+55 51 3317-8142",
+     "ref:CNES": "6295320",
+     "ref:vatin": "BR88625686000742",
+     "website": "https://www.maededeus.com.br/"
+    }
+   },
+   {
+    "type": "node",
+    "id": 6152425718,
+    "lat": -30.0193315,
+    "lon": -51.212997,
+    "tags": {
+     "alt_name": "Céu Aberto",
+     "amenity": "clinic",
+     "fixme": "localização exata",
+     "healthcare": "clinic",
+     "name": "Centro de Atenção Psicossocial",
+     "official_name": "Centro de Atenção Psicossocial voltado a usuários de Álcool e Drogas",
+     "opening_hours": "24/7",
+     "operator": "Associação Educadora São Carlos",
+     "short_name": "CAPS AD",
+     "social_facility:for": "drug_addicted",
+     "website": "https://alfa.portoalegre.rs.gov.br/gp/noticias/prefeitura-entrega-novo-centro-de-saude-mental-24h"
+    }
+   },
+   {
+    "type": "node",
+    "id": 6238689575,
+    "lat": -30.0372658,
+    "lon": -51.2115936,
+    "tags": {
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Centro de Reabilitação Física Clínica Santa Terezinha",
+     "opening_hours": "Mo-Fr 07:30-19:30",
+     "phone": "+55 51 3331-4453"
+    }
+   },
+   {
+    "type": "node",
+    "id": 6238705678,
+    "lat": -30.0380478,
+    "lon": -51.2111435,
+    "tags": {
+     "amenity": "clinic",
+     "description": "Policlinica",
+     "healthcare": "clinic",
+     "name": "Interclin",
+     "opening_hours": "Mo-Fr 08:00-19:30; Sa 08:00-12:00",
+     "phone": "+55 51 3335-3355"
+    }
+   },
+   {
+    "type": "node",
+    "id": 6238713402,
+    "lat": -30.0400143,
+    "lon": -51.215477,
+    "tags": {
+     "addr:housenumber": "39",
+     "addr:postcode": "90040-110",
+     "addr:street": "Travessa da Paz",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Ponto Extra - Acupuntura, Aromaterapia, Livraria",
+     "opening_hours": "Mo-Fr 09:00-18:00",
+     "phone": "+55 51 3228-6424"
+    }
+   },
+   {
+    "type": "node",
+    "id": 6239449202,
+    "lat": -30.0343246,
+    "lon": -51.2107353,
+    "tags": {
+     "addr:housenumber": "550",
+     "addr:postcode": "90035-091",
+     "addr:street": "Rua Fernandes Vieira",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Cirurgia Plástica Dr. Isaac Suksteris",
+     "opening_hours": "Mo-Fr 08:00-18:00",
+     "phone": "+55 51 3019-5040"
+    }
+   },
+   {
+    "type": "node",
+    "id": 6239468649,
+    "lat": -30.0316162,
+    "lon": -51.2113075,
+    "tags": {
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Laboratório Marques Pereira",
+     "opening_hours": "Mo-Fr 07:00-18:00; Sa 07:00-12:00",
+     "phone": "+55 51 3311-0016"
+    }
+   },
+   {
+    "type": "node",
+    "id": 6242473765,
+    "lat": -30.0384235,
+    "lon": -51.2096138,
+    "tags": {
+     "addr:housenumber": "103",
+     "addr:postcode": "90040-270",
+     "addr:street": "Rua Jacinto Gomes",
+     "addr:suburb": "Santana",
+     "amenity": "clinic",
+     "description": "A Clínica Pronto Olhos realiza atendimentos de urgência e emergência em Oftalmologia e Otorrinolaringologia.",
+     "healthcare": "clinic",
+     "name": "Clinica Pronto Olhos e Otorrino",
+     "opening_hours": "Mo-Fr 08:30-19:30; Sa 08:30-13:30",
+     "phone": "+55 51 3331-8200",
+     "ref:CNES": "3345238",
+     "ref:vatin": "BR88328547000161",
+     "website": "https://clinicapronto.com.br/"
+    }
+   },
+   {
+    "type": "node",
+    "id": 6242533318,
+    "lat": -30.0400047,
+    "lon": -51.2083855,
+    "tags": {
+     "addr:housenumber": "2343",
+     "addr:postcode": "90035-007",
+     "addr:street": "Rua Ramiro Barcelos",
+     "amenity": "clinic",
+     "description": "Loja de artigos hospitalares",
+     "healthcare": "clinic",
+     "name": "Ortopedia Servital",
+     "opening_hours": "Mo-Sa 08:30-18:00",
+     "phone": "+55 51 3330-2812"
+    }
+   },
+   {
+    "type": "node",
+    "id": 6257072736,
+    "lat": -30.0379467,
+    "lon": -51.2034264,
+    "tags": {
+     "addr:housenumber": "454",
+     "addr:postcode": "90420-160",
+     "addr:street": "Avenida Protásio Alves",
+     "amenity": "clinic",
+     "description": "Convenios: UNIMED ENCOSTA DA SERRA, SUS, IPERGS, GOLDEN CROSS, SAAS,MAXI SAUDE, PATRONAL GEAP, BRADESCO SAÚDE, CABERGS BANRISUL,",
+     "healthcare": "clinic",
+     "name": "Exato Laboratórios Clinicod",
+     "opening_hours": "Mo-Fr 07:30-18:00; Sa 07:30-12:00",
+     "phone": "+55 51 3333-4740",
+     "website": "https://www.labexato.com.br/"
+    }
+   },
+   {
+    "type": "node",
+    "id": 6261008533,
+    "lat": -30.0337948,
+    "lon": -51.1865808,
+    "tags": {
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Mamo Rad Instituto de Diagnóstico por Imagem"
+    }
+   },
+   {
+    "type": "node",
+    "id": 6805506414,
+    "lat": -30.0386599,
+    "lon": -51.2071285,
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "2350",
+     "addr:street": "Rua Ramiro Barcelos",
+     "addr:suburb": "Santa Cecília",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "healthcare:speciality": "mental_health;Saúde_mental",
+     "name": "CAPS II HCPA",
+     "operator": "Hospital de Clínicas de Porto Alegre (HCPA)",
+     "operator:type": "association",
+     "phone": "+55 51 2101-8710"
+    }
+   },
+   {
+    "type": "node",
+    "id": 6805768732,
+    "lat": -30.0323557,
+    "lon": -51.2033897,
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "500",
+     "addr:postcode": "90430-180",
+     "addr:street": "Rua Mariante",
+     "addr:suburb": "Rio Branco",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Geração POA - Oficina Saúde e Trabalho",
+     "operator": "Secretaria de Saúde de Porto Alegre",
+     "operator:type": "public",
+     "phone": "+55 51 3289-5535"
+    }
+   },
+   {
+    "type": "node",
+    "id": 7180073227,
+    "lat": -30.0341587,
+    "lon": -51.2128487,
+    "tags": {
+     "addr:housenumber": "542-601",
+     "addr:postcode": "90035-120",
+     "addr:street": "Rua General João Telles",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Andrea Mendonça Rodrigues - Pneumologista Pediátrica",
+     "opening_hours": "Mo-Fr 08:30-19:00",
+     "phone": "+55 51 3061-8382",
+     "website": "https://www.andreapneumopediatra.com.br/"
+    }
+   },
+   {
+    "type": "node",
+    "id": 7214969768,
+    "lat": -30.0211086,
+    "lon": -51.1936264,
+    "tags": {
+     "addr:housenumber": "720",
+     "addr:street": "Av. Mariland, 720 - São João, Porto Alegre - RS, 90440-190",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Dra.Carla Leite | Oftalmologista",
+     "opening_hours": "Mo-Fr 08:30-18:00",
+     "phone": "+55 51 3072-7678"
+    }
+   },
+   {
+    "type": "node",
+    "id": 7223207452,
+    "lat": -30.0321293,
+    "lon": -51.2121582,
+    "tags": {
+     "addr:housenumber": "292",
+     "addr:postcode": "90035-121",
+     "addr:street": "Rua General João Telles",
+     "addr:suburb": "Bom Fim",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Clinivida",
+     "opening_hours": "Mo-Fr 09:00-18:00",
+     "phone": "+55 51 3737-7559",
+     "website": "https://clinividars.com.br/"
+    }
+   },
+   {
+    "type": "node",
+    "id": 7223274120,
+    "lat": -30.0366898,
+    "lon": -51.210289,
+    "tags": {
+     "addr:housenumber": "741",
+     "addr:postcode": "90040-320",
+     "addr:street": "Avenida José Bonifácio",
+     "addr:suburb": "Farroupilha",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Clínica Estrázulas de Psicologia",
+     "opening_hours": "Mo-Fr 08:00-20:00",
+     "phone": "+55 51 98212-9829",
+     "website": "http://www.estrazulaspsicologia.com.br/"
+    }
+   },
+   {
+    "type": "node",
+    "id": 7231189719,
+    "lat": -30.0298233,
+    "lon": -51.2117424,
+    "tags": {
+     "addr:door": "Sala 312",
+     "addr:housenumber": "925",
+     "addr:postcode": "90035-076",
+     "addr:street": "Avenida Independência",
+     "addr:suburb": "Bom Fim",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Renato Cassol - Infectologista",
+     "opening_hours": "We-Fr 12:00-17:00",
+     "phone": "+55 51 99127-5445",
+     "ref:CNES": "2860953",
+     "ref:vatin": "BR45549757000177"
+    }
+   },
+   {
+    "type": "node",
+    "id": 7231265525,
+    "lat": -30.0288677,
+    "lon": -51.2025833,
+    "tags": {
+     "addr:housenumber": "270",
+     "addr:postcode": "90440-051",
+     "addr:street": "Rua Doutor Florêncio Ygartua",
+     "addr:suburb": "Moinhos de Vento",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Dermalaser Clínica Dermatológica",
+     "opening_hours": "Mo-Fr 08:00-19:30",
+     "phone": "+55 51 3026-7353",
+     "ref:CNES": "7332173",
+     "ref:vatin": "BR05039174000181"
+    }
+   },
+   {
+    "type": "node",
+    "id": 7232595483,
+    "lat": -30.0388697,
+    "lon": -51.2121111,
+    "tags": {
+     "amenity": "clinic",
+     "description": "Terapeutica- Estètica - Drenagem linfàtica",
+     "healthcare": "clinic",
+     "name": "Massoterapia",
+     "phone": "+55 51 99656-3677"
+    }
+   },
+   {
+    "type": "node",
+    "id": 7986977885,
+    "lat": -30.1117864,
+    "lon": -51.2555234,
+    "tags": {
+     "addr:street": "Avenida Wenceslau Escobar",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "internet_access": "wlan",
+     "name": "Plínio Velozo - Psicólogo",
+     "opening_hours": "Mo-Fr 00:00-24:00",
+     "phone": "+55 51 9 8246-7386"
+    }
+   },
+   {
+    "type": "node",
+    "id": 8730543929,
+    "lat": -30.0432743,
+    "lon": -51.1536603,
+    "tags": {
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "healthcare:speciality": "general;vaccination",
+     "phone": "+55 51 3289-5431",
+     "source": "http://cnes.datasus.gov.br/pages/estabelecimentos/ficha/identificacao/4314906883257",
+     "website": "http://www2.portoalegre.rs.gov.br/sms/default.php?reg=2&p_secao=835"
+    }
+   },
+   {
+    "type": "node",
+    "id": 8730543930,
+    "lat": -30.0432763,
+    "lon": -51.153849,
+    "tags": {
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "healthcare:speciality": "emergency",
+     "phone": "+55 51 3289-5424",
+     "website": "http://www2.portoalegre.rs.gov.br/sms/default.php?reg=20&p_secao=835"
+    }
+   },
+   {
+    "type": "node",
+    "id": 8730543941,
+    "lat": -30.0429178,
+    "lon": -51.1539447,
+    "tags": {
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "healthcare:speciality": "dentist",
+     "name": "Centro de Especialidades Odontológicas Bom Jesus"
+    }
+   },
+   {
+    "type": "node",
+    "id": 8858775068,
+    "lat": -30.1552126,
+    "lon": -51.1753517,
+    "tags": {
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Docctor Med"
+    }
+   },
+   {
+    "type": "node",
+    "id": 11510943915,
+    "lat": -30.0294056,
+    "lon": -51.179551,
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "1221",
+     "addr:postcode": "90480-000",
+     "addr:street": "Avenida Doutor Nilo Peçanha",
+     "addr:suburb": "Auxiliadora",
+     "amenity": "clinic",
+     "check_date": "2024-10-03",
+     "currency:XBT": "yes",
+     "healthcare": "clinic",
+     "name": "Clínica Teichert Odontologia Estética e Implantodontia",
+     "opening_hours": "Mo-Fr 10:00-19:00",
+     "payment:lightning": "yes",
+     "payment:lightning_contactless": "yes",
+     "payment:onchain": "yes",
+     "phone": "+55 51 9987 87826"
+    }
+   },
+   {
+    "type": "node",
+    "id": 11725802997,
+    "lat": -30.0494764,
+    "lon": -51.2275819,
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:door": "1405",
+     "addr:housenumber": "1212",
+     "addr:postcode": "90110-000",
+     "addr:street": "Avenida Praia de Belas",
+     "addr:suburb": "Praia de Belas",
+     "amenity": "clinic",
+     "contact:instagram": "clinicahylluahusein",
+     "description": "Clínica estética",
+     "healthcare": "clinic",
+     "name": "Instituto Hyllua Husein",
+     "website": "https://www.hylluabeauty.com.br"
+    }
+   },
+   {
+    "type": "node",
+    "id": 11770123569,
+    "lat": -30.1342713,
+    "lon": -51.2301477,
+    "tags": {
+     "addr:housenumber": "351",
+     "addr:postcode": "91760-050",
+     "addr:street": "Avenida Tramandaí",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "UBS Ipanema",
+     "name:en": "Basic Healthcare Unit",
+     "opening_hours": "Mo-Fr 07:00-19:00",
+     "phone": "+55 51 3246 5675",
+     "ref:CNES": "2264544"
+    }
+   },
+   {
+    "type": "node",
+    "id": 11990879829,
+    "lat": -30.0679204,
+    "lon": -51.177007,
+    "tags": {
+     "amenity": "hospital",
+     "healthcare": "hospital",
+     "healthcare:speciality": "general",
+     "name": "Clínica da Família- Campo da Tuca"
+    }
+   },
+   {
+    "type": "node",
+    "id": 12708332329,
+    "lat": -30.1020471,
+    "lon": -51.2250983,
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "38",
+     "addr:postcode": "91740-310",
+     "addr:street": "Rua Ângelo Barboza",
+     "addr:suburb": "Cavalhada",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "healthcare:speciality": "general",
+     "name": "US Jardim das Palmeiras",
+     "operator": "Sistema Único de Saúde (Brasil)",
+     "operator:type": "public"
+    }
+   },
+   {
+    "type": "node",
+    "id": 13265828501,
+    "lat": -30.1586621,
+    "lon": -51.1761249,
+    "tags": {
+     "addr:housenumber": "235",
+     "addr:postcode": "91787214",
+     "addr:street": "Rua Geraldo Tollens Linck",
+     "amenity": "clinic",
+     "name": "Unidade de Saúde Moradas da Hípica",
+     "opening_hours": "Mo-Fr 07:00-19:00",
+     "phone": "+55 51 3289 5586"
+    }
+   },
+   {
+    "type": "node",
+    "id": 13785632095,
+    "lat": -30.0690661,
+    "lon": -51.1707702,
+    "tags": {
+     "amenity": "clinic",
+     "name": "Unidade de Saúde São José"
+    }
+   },
+   {
+    "type": "way",
+    "id": 126014194,
+    "center": {
+     "lat": -30.0308422,
+     "lon": -51.2214697
+    },
+    "tags": {
+     "amenity": "hospital",
+     "emergency": "yes",
+     "healthcare": "hospital",
+     "name": "Santa Casa de Misericórdia",
+     "name:en": "Santa Casa de Misericordia Hospital",
+     "website": "https://www.santacasa.org.br/",
+     "wikidata": "Q678520",
+     "wikipedia": "pt:Santa Casa de Misericórdia de Porto Alegre"
+    }
+   },
+   {
+    "type": "way",
+    "id": 126014204,
+    "center": {
+     "lat": -30.0301595,
+     "lon": -51.220328
+    },
+    "tags": {
+     "addr:housenumber": "155",
+     "addr:street": "Avenida Independência",
+     "amenity": "hospital",
+     "building": "hospital",
+     "building:levels": "7",
+     "emergency": "yes",
+     "healthcare": "hospital",
+     "name": "Hospital Dom Vicente Scherer",
+     "phone": "+55 51 3214-8600",
+     "wikidata": "Q3145152"
+    }
+   },
+   {
+    "type": "way",
+    "id": 126014205,
+    "center": {
+     "lat": -30.030957,
+     "lon": -51.2202761
+    },
+    "tags": {
+     "amenity": "hospital",
+     "building": "hospital",
+     "building:levels": "7",
+     "emergency": "no",
+     "healthcare": "hospital",
+     "name": "Hospital Santa Rita",
+     "phone": "+55 51 3214-8400",
+     "wikidata": "Q3145234"
+    }
+   },
+   {
+    "type": "way",
+    "id": 126014206,
+    "center": {
+     "lat": -30.0387315,
+     "lon": -51.2066231
+    },
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "2350",
+     "addr:postcode": "90035-903",
+     "addr:street": "Rua Ramiro Barcelos",
+     "addr:suburb": "Santa Cecília",
+     "amenity": "hospital",
+     "building": "hospital",
+     "emergency": "yes",
+     "healthcare": "hospital",
+     "height": "12",
+     "name": "Hospital de Clínicas",
+     "official_name": "Hospital de Clínicas de Porto Alegre",
+     "opening_hours": "24/7",
+     "phone": "+55 51 3359-8000",
+     "ref": "21110",
+     "ref:CNES": "2237601",
+     "ref:vatin": "BR87020517000120",
+     "short_name": "HCPA",
+     "source:name": "survey",
+     "website": "https://www.hcpa.ufrgs.br/",
+     "wheelchair": "limited",
+     "wikidata": "Q10298534"
+    }
+   },
+   {
+    "type": "way",
+    "id": 126014341,
+    "center": {
+     "lat": -30.0386926,
+     "lon": -51.2053581
+    },
+    "tags": {
+     "addr:housenumber": "543",
+     "addr:postcode": "90620-110",
+     "addr:street": "Rua São Manoel",
+     "addr:suburb": "Santa Cecília",
+     "amenity": "clinic",
+     "building": "hospital",
+     "healthcare": "clinic",
+     "name": "Unidade Básica de Saúde Santa Cecília",
+     "opening_hours": "Mo-Fr 08:00-18:00",
+     "operator:ref:vatin": "BR92963560000160",
+     "phone": "+55 51 3359-8685",
+     "ref:CNES": "2264382",
+     "short_name": "UBS Santa Cecília"
+    }
+   },
+   {
+    "type": "way",
+    "id": 132023531,
+    "center": {
+     "lat": -30.0185952,
+     "lon": -51.1927834
+    },
+    "tags": {
+     "addr:housenumber": "450",
+     "addr:postcode": "90440-190",
+     "addr:street": "Avenida Mariland",
+     "amenity": "hospital",
+     "healthcare": "hospital",
+     "name": "Hospital Militar de Área de Porto Alegre",
+     "operator:ref:vatin": "BR10360293000171",
+     "phone": "+55 51 2111-8570",
+     "ref:CNES": "7989954",
+     "ref:vatin": "BR10360293000252",
+     "wall": "brick",
+     "website": "http://www.hmapa.eb.mil.br/"
+    }
+   },
+   {
+    "type": "way",
+    "id": 167286273,
+    "center": {
+     "lat": -30.0301125,
+     "lon": -51.2199466
+    },
+    "tags": {
+     "amenity": "hospital",
+     "building": "hospital",
+     "building:levels": "8",
+     "emergency": "yes",
+     "healthcare": "hospital",
+     "name": "Hospital da Criança Santo Antônio",
+     "wikidata": "Q548090"
+    }
+   },
+   {
+    "type": "way",
+    "id": 167286408,
+    "center": {
+     "lat": -30.0304237,
+     "lon": -51.2211814
+    },
+    "tags": {
+     "amenity": "hospital",
+     "building": "hospital",
+     "building:levels": "5",
+     "emergency": "no",
+     "healthcare": "hospital",
+     "name": "Hospital Pavilhão Pereira Filho",
+     "wikidata": "Q3373049"
+    }
+   },
+   {
+    "type": "way",
+    "id": 167286415,
+    "center": {
+     "lat": -30.0306155,
+     "lon": -51.2215025
+    },
+    "tags": {
+     "amenity": "hospital",
+     "building": "hospital",
+     "emergency": "no",
+     "healthcare": "hospital",
+     "name": "Hospital São José",
+     "wikidata": "Q3145240"
+    }
+   },
+   {
+    "type": "way",
+    "id": 167286458,
+    "center": {
+     "lat": -30.0302323,
+     "lon": -51.2219579
+    },
+    "tags": {
+     "amenity": "hospital",
+     "building": "hospital",
+     "healthcare": "hospital",
+     "name": "Hospital São Francisco",
+     "wikidata": "Q3145239"
+    }
+   },
+   {
+    "type": "way",
+    "id": 214487562,
+    "center": {
+     "lat": -30.0492412,
+     "lon": -51.2090193
+    },
+    "tags": {
+     "amenity": "hospital",
+     "emergency": "no",
+     "healthcare": "hospital",
+     "healthcare:speciality": "cardiology",
+     "loc_name": "Instituto do Coração",
+     "name": "Instituto de Cardiologia",
+     "wikidata": "Q10302773"
+    }
+   },
+   {
+    "type": "way",
+    "id": 233635165,
+    "center": {
+     "lat": -30.0590283,
+     "lon": -51.2289433
+    },
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "286",
+     "addr:postcode": "90880-480",
+     "addr:street": "Rua José de Alencar",
+     "addr:suburb": "Menino Deus",
+     "amenity": "hospital",
+     "building": "hospital",
+     "contact:facebook": "HospitalMaedeDeus",
+     "contact:instagram": "hospitalmaededeus",
+     "emergency": "yes",
+     "healthcare": "hospital",
+     "height": "10",
+     "name": "Hospital Mãe de Deus",
+     "opening_hours": "24/7",
+     "phone": "+55 51 3230-6000",
+     "ref:CNES": "3007847",
+     "ref:vatin": "BR88625686002443",
+     "toilets:wheelchair": "yes",
+     "website": "https://www.maededeus.com.br/",
+     "wheelchair": "yes",
+     "wikidata": "Q10298431",
+     "wikipedia": "pt:Hospital Mãe de Deus"
+    }
+   },
+   {
+    "type": "way",
+    "id": 233791059,
+    "center": {
+     "lat": -30.0433298,
+     "lon": -51.2139229
+    },
+    "tags": {
+     "addr:housenumber": "55",
+     "addr:postcode": "90040-341",
+     "addr:street": "Rua Jeronimo de Ornellas",
+     "addr:suburb": "Santana",
+     "amenity": "hospital",
+     "healthcare": "hospital",
+     "name": "Centro de Saúde Modelo",
+     "opening_hours": "Mo-Fr 07:00-22:00",
+     "operator:ref:vatin": "BR92963560000160",
+     "phone": "+55 51 3289-2558",
+     "ref:CNES": "2264390",
+     "wheelchair": "yes"
+    }
+   },
+   {
+    "type": "way",
+    "id": 233806011,
+    "center": {
+     "lat": -30.0452461,
+     "lon": -51.2169892
+    },
+    "tags": {
+     "amenity": "hospital",
+     "check_date": "2026-04-11",
+     "healthcare": "hospital",
+     "name": "Hospital Porto Alegre",
+     "phone": "+55 51 3228-9344",
+     "website": "http://www.hpa.org.br"
+    }
+   },
+   {
+    "type": "way",
+    "id": 234811929,
+    "center": {
+     "lat": -30.0271402,
+     "lon": -51.1492417
+    },
+    "tags": {
+     "addr:housenumber": "1830",
+     "addr:postcode": "91370-000",
+     "addr:street": "Rua Alberto Silva",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "loc_name": "Posto de Saúde Vila Ipiranga",
+     "name": "Unidade Básica de Saúde Vila Ipiranga",
+     "opening_hours": "Mo-Fr 07:00-18:00",
+     "operator:ref:vatin": "BR92963560000160",
+     "phone": "+55 51 3344-1482",
+     "ref:CNES": "2264811",
+     "short_name": "UBS Vila Ipiranga"
+    }
+   },
+   {
+    "type": "way",
+    "id": 234811935,
+    "center": {
+     "lat": -30.0221095,
+     "lon": -51.1541727
+    },
+    "tags": {
+     "addr:housenumber": "285",
+     "addr:street": "Rua Engenheiro Walter Boehl",
+     "amenity": "hospital",
+     "contact:phone": "+55 51 3018-3131",
+     "contact:website": "http://www.hospitalbancodeolhos.org.br",
+     "emergency": "yes",
+     "healthcare": "hospital",
+     "name": "Hospital Banco de Olhos"
+    }
+   },
+   {
+    "type": "way",
+    "id": 235379352,
+    "center": {
+     "lat": -30.0696103,
+     "lon": -51.2165134
+    },
+    "tags": {
+     "addr:housenumber": "151",
+     "addr:postcode": "90850-530",
+     "addr:street": "Rua Professor Manoel Lobato",
+     "amenity": "hospital",
+     "emergency": "yes",
+     "healthcare": "hospital",
+     "loc_name": "Postão da Vila Cruzeiro",
+     "name": "Pronto Atendimento Cruzeiro do Sul",
+     "operator:ref:vatin": "BR92963560000160",
+     "phone": "+55 51 3289-4016",
+     "ref:CNES": "2237148",
+     "website": "http://www2.portoalegre.rs.gov.br/sms/default.php?reg=25&p_secao=837"
+    }
+   },
+   {
+    "type": "way",
+    "id": 235503027,
+    "center": {
+     "lat": -30.0100765,
+     "lon": -51.1594948
+    },
+    "tags": {
+     "addr:housenumber": "20",
+     "addr:postcode": "91040-000",
+     "addr:street": "Rua Domingos Rubbo",
+     "amenity": "hospital",
+     "check_date": "2026-03-18",
+     "emergency": "yes",
+     "healthcare": "hospital",
+     "name": "Hospital Cristo Redentor",
+     "operator": "Grupo Hospitalar Conceição",
+     "operator:type": "public",
+     "phone": "+55 51 3357-4100",
+     "ref:CNES": "2265060",
+     "ref:vatin": "BR92787118000391",
+     "website": "https://www.ghc.com.br/default.asp?idMenu=unidades&idSubMenu=4",
+     "wheelchair": "yes"
+    }
+   },
+   {
+    "type": "way",
+    "id": 237136940,
+    "center": {
+     "lat": -30.0430926,
+     "lon": -51.153779
+    },
+    "tags": {
+     "addr:housenumber": "410",
+     "addr:street": "Rua Bom Jesus",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Centro de Saúde Bom Jesus",
+     "opening_hours": "Mo-Fr 07:00-18:00",
+     "operator": "SMS",
+     "phone": "+55 51 3338-5388",
+     "source": "http://cnes.datasus.gov.br/pages/estabelecimentos/ficha/identificacao/4314906883257",
+     "website": "http://www2.portoalegre.rs.gov.br/sms/default.php?reg=2&p_secao=835"
+    }
+   },
+   {
+    "type": "way",
+    "id": 237709751,
+    "center": {
+     "lat": -30.0158834,
+     "lon": -51.1586659
+    },
+    "tags": {
+     "addr:housenumber": "596",
+     "addr:postcode": "91350-200",
+     "addr:street": "Avenida Francisco Trein",
+     "amenity": "hospital",
+     "building": "hospital",
+     "building:levels": "8",
+     "emergency": "yes",
+     "healthcare": "hospital",
+     "name": "Hospital Nossa Senhora da Conceição",
+     "operator": "Grupo Hospitalar Conceição",
+     "operator:type": "public",
+     "phone": "+55 51 3357-2000",
+     "ref:CNES": "2237571",
+     "ref:vatin": "BR92787118000120",
+     "website": "https://www.ghc.com.br/default.asp?idMenu=unidades&idSubMenu=1"
+    }
+   },
+   {
+    "type": "way",
+    "id": 237709752,
+    "center": {
+     "lat": -30.0152229,
+     "lon": -51.1581178
+    },
+    "tags": {
+     "amenity": "hospital",
+     "building": "yes",
+     "fixme": "O que é isto?",
+     "healthcare": "hospital"
+    }
+   },
+   {
+    "type": "way",
+    "id": 237709753,
+    "center": {
+     "lat": -30.0156004,
+     "lon": -51.1575805
+    },
+    "tags": {
+     "addr:housenumber": "565",
+     "addr:street": "Rua Álvares Cabral",
+     "alt_name": "Hospital da Criança",
+     "amenity": "hospital",
+     "building": "hospital",
+     "healthcare": "hospital",
+     "name": "Hospital da Criança Conceição",
+     "operator": "Grupo Hospitalar Conceição",
+     "phone": "+55 51 3357-2000",
+     "short_name": "HCC",
+     "website": "https://www.ghc.com.br/default.asp?idMenu=unidades&idSubMenu=3"
+    }
+   },
+   {
+    "type": "way",
+    "id": 239664213,
+    "center": {
+     "lat": -30.012187,
+     "lon": -51.1537934
+    },
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "171",
+     "addr:postcode": "91360-000",
+     "addr:street": "Avenida do Forte",
+     "amenity": "hospital",
+     "building": "yes",
+     "healthcare": "hospital",
+     "name": "Centro Clínico Gaúcho",
+     "ref:CNES": "9791639",
+     "ref:vatin": "BR00773639001181"
+    }
+   },
+   {
+    "type": "way",
+    "id": 240718773,
+    "center": {
+     "lat": -30.0599868,
+     "lon": -51.1878742
+    },
+    "tags": {
+     "addr:housenumber": "2460",
+     "addr:postcode": "90650-001",
+     "addr:street": "Avenida Bento Gonçalves",
+     "amenity": "hospital",
+     "email": "hpsp@saude.rs.gov.br",
+     "healthcare": "hospital",
+     "name": "Hospital Psiquiátrico São Pedro",
+     "operator:ref:vatin": "BR87958625000149",
+     "phone": "+55 51 3339-2111",
+     "ref:CNES": "2237806",
+     "ref:vatin": "BR87958625000220",
+     "wikidata": "Q3145361",
+     "wikipedia": "pt:Hospital Psiquiátrico São Pedro"
+    }
+   },
+   {
+    "type": "way",
+    "id": 243044110,
+    "center": {
+     "lat": -30.1064501,
+     "lon": -51.1718231
+    },
+    "tags": {
+     "amenity": "hospital",
+     "building": "hospital",
+     "description": "Hospital Parque Belém fechado em maio de 2017. Em julho de 2018, a Associação São Miguel aluga o prédio para as futuras instalações do Complexo Hospitalar São Miguel.\n\n",
+     "name": "Futuras instalações do Complexo Hospitalar São Miguel (antigo Hospital Parque Belém)",
+     "wikidata": "Q10298443",
+     "wikipedia": "pt:Hospital Parque Belém"
+    }
+   },
+   {
+    "type": "way",
+    "id": 243238223,
+    "center": {
+     "lat": -30.148814,
+     "lon": -51.1460135
+    },
+    "tags": {
+     "addr:street": "Rua Álvaro Difini",
+     "amenity": "hospital",
+     "barrier": "fence",
+     "email": "saude.restinga@hmv.org.br",
+     "emergency": "yes",
+     "fence_type": "chain_link",
+     "name": "Pronto-Atendimento Saúde Restinga",
+     "opening_hours": "24/7",
+     "operator": "Hospital Moinhos de Vento",
+     "phone": "+55 51 3250-1411",
+     "start_date": "2004"
+    }
+   },
+   {
+    "type": "way",
+    "id": 244050559,
+    "center": {
+     "lat": -30.0238985,
+     "lon": -51.1426295
+    },
+    "tags": {
+     "addr:housenumber": "39",
+     "addr:postcode": "91380-030",
+     "addr:street": "Rua Biscaia",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "landuse": "commercial",
+     "loc_name": "Posto de Saúde Jardim Itú",
+     "name": "UBS Jardim Itú",
+     "official_name": "Unidade Básica de Saúde Jardim Itú",
+     "operator": "GHC",
+     "operator:ref:vatin": "BR92963560000160",
+     "phone": "+55 51 3357-2473",
+     "ref:CNES": "2265079"
+    }
+   },
+   {
+    "type": "way",
+    "id": 244644162,
+    "center": {
+     "lat": -30.0369082,
+     "lon": -51.2098246
+    },
+    "tags": {
+     "addr:street": "Largo Teodoro Herzl",
+     "alt_name": "HPS",
+     "amenity": "hospital",
+     "emergency": "yes",
+     "healthcare": "hospital",
+     "name": "Hospital de Pronto Socorro",
+     "opening_hours": "24/7",
+     "phone": "+55 51 3289-7999",
+     "short_name": "HPS",
+     "start_date": "1944",
+     "website": "https://prefeitura.poa.br/carta-de-servicos/urgencia-e-emergencia-hospital-de-pronto-socorro",
+     "wheelchair": "yes",
+     "wikidata": "Q10298542",
+     "wikipedia": "pt:Hospital de Pronto Socorro de Porto Alegre"
+    }
+   },
+   {
+    "type": "way",
+    "id": 244789157,
+    "center": {
+     "lat": -30.0507029,
+     "lon": -51.2068058
+    },
+    "tags": {
+     "addr:housenumber": "1455",
+     "addr:postcode": "90040-373",
+     "addr:street": "Rua Santana",
+     "amenity": "clinic",
+     "barrier": "fence",
+     "fence_type": "chain_link",
+     "healthcare": "clinic",
+     "landuse": "commercial",
+     "name": "Clínica Pinel",
+     "official_name": "Associação Encarnacion Blaya",
+     "phone": "+55 51 3223-7799",
+     "ref:CNES": "3881660",
+     "ref:vatin": "BR92675586000102",
+     "website": "https://clinicapinel.com.br/"
+    }
+   },
+   {
+    "type": "way",
+    "id": 244869432,
+    "center": {
+     "lat": -30.1329479,
+     "lon": -51.1998891
+    },
+    "tags": {
+     "addr:housenumber": "160",
+     "addr:postcode": "91750-170",
+     "addr:street": "Rua Colina",
+     "amenity": "clinic",
+     "barrier": "fence",
+     "fence_type": "chain_link",
+     "healthcare": "clinic",
+     "landuse": "commercial",
+     "loc_name": "Posto de Saúde Campo Novo",
+     "name": "UBS Campo Novo",
+     "official_name": "Unidade Básica de Saúde Campo Novo",
+     "opening_hours": "Mo-Fr 07:00-18:00",
+     "operator:ref:vatin": "BR92963560000160",
+     "phone": "+55 51 3245-3972",
+     "ref:CNES": "2264536"
+    }
+   },
+   {
+    "type": "way",
+    "id": 248405681,
+    "center": {
+     "lat": -30.0550444,
+     "lon": -51.1758004
+    },
+    "tags": {
+     "addr:housenumber": "6690",
+     "addr:postcode": "90610-000",
+     "addr:street": "Avenida Ipiranga",
+     "amenity": "hospital",
+     "building": "hospital",
+     "contact:facebook": "SaoLucasdaPUCRS",
+     "contact:instagram": "hslpucrs",
+     "emergency": "yes",
+     "healthcare": "hospital",
+     "name": "Hospital São Lucas da PUCRS",
+     "name:en": "PUCRS St. Luke Hospital",
+     "opening_hours": "24/7",
+     "phone": "+55 51 33203000;+55 51 33203200",
+     "website": "https://hospitalsaolucas.pucrs.br/"
+    }
+   },
+   {
+    "type": "way",
+    "id": 248405682,
+    "center": {
+     "lat": -30.0552069,
+     "lon": -51.1738488
+    },
+    "tags": {
+     "amenity": "hospital",
+     "building": "yes",
+     "healthcare": "hospital",
+     "name": "Instituto do Cérebro Do Rio Grande do Sul (INSCER)"
+    }
+   },
+   {
+    "type": "way",
+    "id": 249901840,
+    "center": {
+     "lat": -30.113241,
+     "lon": -51.1652707
+    },
+    "tags": {
+     "amenity": "clinic",
+     "building": "yes",
+     "fixme": "Cadastrar nome correto, endereço e contato."
+    }
+   },
+   {
+    "type": "way",
+    "id": 254219042,
+    "center": {
+     "lat": -30.0610999,
+     "lon": -51.1495013
+    },
+    "tags": {
+     "addr:housenumber": "450",
+     "addr:postcode": "91430-000",
+     "addr:street": "Avenida Antônio de Carvalho",
+     "addr:suburb": "Jardim Carvalho",
+     "amenity": "hospital",
+     "email": "hospitalindependencia@divinaprovidencia.org.br",
+     "healthcare": "hospital",
+     "name": "Hospital Independência",
+     "operator": "Sociedade Sulina Divina Providência",
+     "phone": "+55 51 3383-5600",
+     "ref:CNES": "7092571",
+     "ref:vatin": "BR87317764000606",
+     "website": "https://divinaprovidencia.org.br/",
+     "wikipedia": "pt:Hospital Independência"
+    }
+   },
+   {
+    "type": "way",
+    "id": 299874647,
+    "center": {
+     "lat": -30.0621172,
+     "lon": -51.1787939
+    },
+    "tags": {
+     "addr:housenumber": "3722",
+     "addr:postcode": "90650-001",
+     "addr:street": "Avenida Bento Gonçalves",
+     "addr:suburb": "Partenon",
+     "amenity": "hospital",
+     "email": "fathsp@saude.rs.gov.br",
+     "healthcare": "hospital",
+     "name": "Hospital Sanatório Partenon",
+     "operator:ref:vatin": "BR87958625000149",
+     "ref:CNES": "2237121",
+     "ref:vatin": "BR87958625000904"
+    }
+   },
+   {
+    "type": "way",
+    "id": 316732357,
+    "center": {
+     "lat": -30.0538435,
+     "lon": -51.1502711
+    },
+    "tags": {
+     "addr:housenumber": "10",
+     "addr:postcode": "91430-000",
+     "addr:street": "Rua 3",
+     "addr:suburb": "CEFER I",
+     "amenity": "clinic",
+     "description": "Serviços: acolhimento. Atendimento de pediatria, ginecologia e clínica geral. Vacinação, curativos, medicações injetáveis, teste do pezinho e distribuição de medicamentos. Programas Nascer, Prá-Crescer, Esperança, Pré-Natal, Prá-Nenê e Hiperdia (acompanha",
+     "healthcare": "clinic",
+     "name": "Estratégia de Saúde da Família Jardim Carvalho",
+     "opening_hours": "Mo-Fr 08:00-12:00, 13:00-17:00",
+     "operator:ref:vatin": "BR92963560000160",
+     "phone": "+55 51 3387-6033",
+     "ref:CNES": "2237946",
+     "short_name": "ESF Jardim Carvalho",
+     "website": "http://www2.portoalegre.rs.gov.br/sms/default.php?reg=4&p_secao=835"
+    }
+   },
+   {
+    "type": "way",
+    "id": 316737027,
+    "center": {
+     "lat": -30.0584314,
+     "lon": -51.1453782
+    },
+    "tags": {
+     "addr:housenumber": "200",
+     "addr:street": "Rua Comendador Eduardo Secco",
+     "addr:suburb": "Jardim Carvalho",
+     "amenity": "clinic",
+     "building": "yes",
+     "healthcare": "clinic",
+     "name": "Estratégia de Saúde da Família Milta Rodrigues",
+     "note": "Serviços: acolhimento. Atendimento de pediatria, ginecologia e clínica geral. Vacinação, curativos, medicações injetáveis, teste do pezinho e distribuição de medicamentos. Programas Nascer, Prá-Crescer, Esperança, Pré-Natal, Prá-Nenê e Hiperdia (acompanha",
+     "opening_hours": "Mo-Fr 08:00-12:00, 13:00-17:00",
+     "phone": "+55 51 3386-8073",
+     "short_name": "ESF Milta Rodrigues",
+     "website": "http://www2.portoalegre.rs.gov.br/sms/default.php?reg=7&p_secao=835"
+    }
+   },
+   {
+    "type": "way",
+    "id": 316790810,
+    "center": {
+     "lat": -30.0459413,
+     "lon": -51.1635283
+    },
+    "tags": {
+     "addr:housenumber": "570",
+     "addr:postcode": "91420-470",
+     "addr:street": "Rua Nazareth",
+     "addr:suburb": "Bom Jesus",
+     "amenity": "clinic",
+     "building": "yes",
+     "healthcare": "clinic",
+     "name": "Unidade de Saúde Vila Jardim",
+     "opening_hours": "Mo-Fr 08:00-20:00",
+     "operator:ref:vatin": "BR92963560000160",
+     "phone": "+55 51 3334-1083",
+     "ref:CNES": "2264846",
+     "website": "http://cnes.datasus.gov.br/pages/estabelecimentos/ficha/identificacao/4314902264846"
+    }
+   },
+   {
+    "type": "way",
+    "id": 316791650,
+    "center": {
+     "lat": -30.0391836,
+     "lon": -51.1282894
+    },
+    "tags": {
+     "addr:housenumber": "210",
+     "addr:postcode": "91260-090",
+     "addr:street": "Rua Marrieta Menna Barreto",
+     "amenity": "clinic",
+     "name": "Unidade Básica de Saúde Morro Santana",
+     "opening_hours": "Mo-Fr 07:00-18:00",
+     "phone": "+55 51 3387-8838",
+     "short_name": "UBS Morro Santana",
+     "wheelchair": "limited"
+    }
+   },
+   {
+    "type": "way",
+    "id": 316793986,
+    "center": {
+     "lat": -30.0320947,
+     "lon": -51.1133055
+    },
+    "tags": {
+     "amenity": "clinic",
+     "building": "yes",
+     "healthcare": "clinic",
+     "name": "Unidade Básica de Saúde Chácara da Fumaça",
+     "opening_hours": "Mo-Fr 07:00-18:00",
+     "phone": "+55 51 3386-1166",
+     "short_name": "UBS Chácara da Fumaça"
+    }
+   },
+   {
+    "type": "way",
+    "id": 316976828,
+    "center": {
+     "lat": -30.0144756,
+     "lon": -51.1778575
+    },
+    "tags": {
+     "addr:housenumber": "90",
+     "addr:postcode": "90520-200",
+     "addr:street": "Rua 3 de Abril",
+     "alt_name": "Unidade de Saúde IAPI",
+     "amenity": "hospital",
+     "healthcare": "hospital",
+     "loc_name": "Posto de Saúde do IAPI",
+     "name": "Centro de Saúde IAPI",
+     "opening_hours": "Mo-Sa 07:00-18:00",
+     "operator:ref:vatin": "BR92963560000160",
+     "phone": "+55 51 3289-3400",
+     "ref:CNES": "809527",
+     "website": "http://www2.portoalegre.rs.gov.br/sms/default.php?p_secao=335"
+    }
+   },
+   {
+    "type": "way",
+    "id": 316976832,
+    "center": {
+     "lat": -30.1193801,
+     "lon": -51.2077637
+    },
+    "tags": {
+     "addr:housenumber": "155",
+     "addr:postcode": "91750-040",
+     "addr:street": "Rua Catarino Andreatta",
+     "alt_name": "Hospital Vila Nova",
+     "amenity": "hospital",
+     "contact:facebook": "ahvnpoa",
+     "contact:instagram": "ahvnoficial",
+     "contact:phone": "+55 51 3245-8900",
+     "healthcare": "hospital",
+     "name": "Associação Hospitalar Vila Nova",
+     "opening_hours": "24/7",
+     "ref:CNES": "2693801",
+     "ref:vatin": "BR04994418000112",
+     "wikidata": "Q106821770"
+    }
+   },
+   {
+    "type": "way",
+    "id": 316976834,
+    "center": {
+     "lat": -30.0097235,
+     "lon": -51.1458952
+    },
+    "tags": {
+     "addr:street": "Rua Jerônimo Zelmanovitz",
+     "amenity": "clinic",
+     "contact:phone": "+55 51 3368-1629",
+     "contact:website": "http://www.ghc.com.br/carta/upa.html",
+     "emergency": "yes",
+     "healthcare": "clinic",
+     "name": "Unidade de Pronto Atendimento Moacyr Scliar",
+     "short_name": "UPA Moacyr Scliar"
+    }
+   },
+   {
+    "type": "way",
+    "id": 318661243,
+    "center": {
+     "lat": -30.1066597,
+     "lon": -51.1717917
+    },
+    "tags": {
+     "amenity": "hospital"
+    }
+   },
+   {
+    "type": "way",
+    "id": 319620171,
+    "center": {
+     "lat": -30.0504907,
+     "lon": -51.1528002
+    },
+    "tags": {
+     "addr:housenumber": "565",
+     "addr:street": "Beco 5",
+     "alt_name": "Unidade Básica de Saúde da Família Vila Pinto",
+     "amenity": "clinic",
+     "building": "yes",
+     "description": "Serviços: acolhimento. Atendimento de pediatria, ginecologia e clínica geral. Vacinação, curativos, medicações injetáveis, teste do pezinho e distribuição de medicamentos. Programas Nascer, Prá-Crescer, Esperança, Pré-Natal, Prá-Nenê e Hiperdia (acompanha",
+     "healthcare": "clinic",
+     "name": "Estratégia Saúde da Família Vila Pinto",
+     "official_name": "Estratégia Saúde da Família Vila Pinto",
+     "opening_hours": "Mo-Fr 08:00-12:00,13:00-17:00",
+     "phone": "+55 51 3386-2333",
+     "short_name": "Estratégia Saúde da Família Vila Pinto",
+     "website": "http://www2.portoalegre.rs.gov.br/sms/default.php?reg=13&p_secao=835"
+    }
+   },
+   {
+    "type": "way",
+    "id": 335995481,
+    "center": {
+     "lat": -30.0876398,
+     "lon": -51.2064918
+    },
+    "tags": {
+     "addr:housenumber": "175",
+     "addr:postcode": "91720-440",
+     "addr:street": "Praça Simões Lopes Neto",
+     "addr:suburb": "Teresópolis",
+     "amenity": "hospital",
+     "healthcare": "hospital",
+     "name": "Hospital Espírita de Porto Alegre",
+     "phone": "+55 51 3320-5700",
+     "ref:CNES": "2237180",
+     "ref:vatin": "BR92697291000137",
+     "website": "https://www.hepa.org.br/"
+    }
+   },
+   {
+    "type": "way",
+    "id": 338334659,
+    "center": {
+     "lat": -30.0284921,
+     "lon": -51.2324602
+    },
+    "tags": {
+     "amenity": "clinic",
+     "building": "yes",
+     "name": "Centro de Saúde Santa Marta"
+    }
+   },
+   {
+    "type": "way",
+    "id": 347702342,
+    "center": {
+     "lat": -30.0479368,
+     "lon": -51.2124501
+    },
+    "tags": {
+     "addr:housenumber": "1801",
+     "addr:postcode": "90160-092",
+     "addr:street": "Avenida Ipiranga",
+     "amenity": "hospital",
+     "contact:facebook": "https://facebook.com/pages/Hospital-Ernesto-Dornelles/206166946073346",
+     "emergency": "yes",
+     "healthcare": "hospital",
+     "name": "Hospital Ernesto Dornelles",
+     "opening_hours": "24/7",
+     "phone": "+55 51 3217-2002",
+     "website": "https://www.hed.com.br/"
+    }
+   },
+   {
+    "type": "way",
+    "id": 353491145,
+    "center": {
+     "lat": -30.0256236,
+     "lon": -51.2081805
+    },
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "910",
+     "addr:postcode": "90035-000",
+     "addr:street": "Rua Ramiro Barcelos",
+     "addr:suburb": "Moinhos de Vento",
+     "amenity": "hospital",
+     "contact:facebook": "HospitalMoinhos",
+     "contact:instagram": "hospitalmoinhosdevento",
+     "emergency": "yes",
+     "healthcare": "hospital",
+     "name": "Hospital Moinhos de Vento",
+     "opening_hours": "24/7",
+     "phone": "+55 51 3314-3434;+55 51 3314-3300",
+     "ref:CNES": "3006522",
+     "ref:vatin": "BR92685833000151",
+     "website": "https://www.hospitalmoinhos.org.br",
+     "wikidata": "Q10298422",
+     "wikipedia": "pt:Hospital Moinhos de Vento"
+    }
+   },
+   {
+    "type": "way",
+    "id": 371944094,
+    "center": {
+     "lat": -30.1108161,
+     "lon": -51.1100524
+    },
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "5120",
+     "addr:postcode": "91560-000",
+     "addr:street": "Estrada João de Oliveira Remião",
+     "addr:suburb": "Lomba do Pinheiro",
+     "amenity": "clinic",
+     "building": "yes",
+     "healthcare": "clinic",
+     "name": "Centro de Saúde Lomba do Pinheiro",
+     "opening_hours": "08:00-12:00,13:00-17:00",
+     "phone": "+55 51 3319-4850",
+     "wheelchair": "limited"
+    }
+   },
+   {
+    "type": "way",
+    "id": 372535694,
+    "center": {
+     "lat": -30.1424803,
+     "lon": -51.1288775
+    },
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "3330",
+     "addr:postcode": "91796-000",
+     "addr:street": "Avenida João Antônio da Silveira",
+     "addr:suburb": "Restinga",
+     "amenity": "hospital",
+     "barrier": "fence",
+     "email": "faleconosco@hres.org.br",
+     "emergency": "yes",
+     "fence_type": "concrete",
+     "healthcare": "hospital",
+     "name": "Hospital Restinga e Extremo-Sul",
+     "operator": "Hospital Moinhos",
+     "phone": "+55 51 3250-1411",
+     "ref:CNES": "7513151",
+     "ref:vatin": "BR04994418000384",
+     "website": "http://www.hres.org.br/",
+     "wheelchair": "yes"
+    }
+   },
+   {
+    "type": "way",
+    "id": 404111241,
+    "center": {
+     "lat": -30.0292021,
+     "lon": -51.2068424
+    },
+    "tags": {
+     "addr:housenumber": "17",
+     "addr:postcode": "90430-001",
+     "addr:street": "Rua Mostardeiro",
+     "amenity": "hospital",
+     "building": "hospital",
+     "healthcare": "hospital",
+     "name": "Hospital Fêmina",
+     "operator": "Grupo Hospitalar Conceição",
+     "operator:type": "private",
+     "phone": "+55 51 3314-5200",
+     "ref:CNES": "2265052",
+     "ref:vatin": "BR92787118000200",
+     "website": "https://www.ghc.com.br/default.asp?idMenu=unidades&idSubMenu=2"
+    }
+   },
+   {
+    "type": "way",
+    "id": 414432876,
+    "center": {
+     "lat": -30.028339,
+     "lon": -51.2227804
+    },
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "391",
+     "addr:street": "Avenida Alberto Bins",
+     "addr:suburb": "Centro Histórico",
+     "amenity": "clinic",
+     "building": "yes",
+     "healthcare": "clinic",
+     "name": "AmorSaúde",
+     "source": "CCPG/PMPA"
+    }
+   },
+   {
+    "type": "way",
+    "id": 414743189,
+    "center": {
+     "lat": -30.0312078,
+     "lon": -51.2367708
+    },
+    "tags": {
+     "amenity": "hospital",
+     "description": "POLICL�NICA ODONTOL�GICA DA BRIGADA MILITAR",
+     "healthcare": "hospital",
+     "name": "Centro Médico-Odontológico da Brigada Militar",
+     "note": "Prédio notável: adicionar nomes distinguindo Maiúscula/minúsculas"
+    }
+   },
+   {
+    "type": "way",
+    "id": 419339793,
+    "center": {
+     "lat": -30.0280662,
+     "lon": -51.218551
+    },
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "799",
+     "addr:postcode": "90030-142",
+     "addr:street": "Avenida Alberto Bins",
+     "amenity": "clinic",
+     "building": "yes",
+     "healthcare": "clinic",
+     "name": "Centro Clínico Gaúcho",
+     "ref:CNES": "9982981",
+     "ref:vatin": "BR00773639000886"
+    }
+   },
+   {
+    "type": "way",
+    "id": 419342904,
+    "center": {
+     "lat": -30.0293517,
+     "lon": -51.2097608
+    },
+    "tags": {
+     "amenity": "clinic",
+     "building": "yes",
+     "healthcare": "clinic",
+     "name": "Clínica de Ortopedia e Traumatologia Moinhos de Vento"
+    }
+   },
+   {
+    "type": "way",
+    "id": 419345702,
+    "center": {
+     "lat": -30.0262147,
+     "lon": -51.20172
+    },
+    "tags": {
+     "amenity": "clinic",
+     "building": "yes",
+     "healthcare": "clinic",
+     "name": "Centro Clínico Sarmento Leite",
+     "note": "nome em description"
+    }
+   },
+   {
+    "type": "way",
+    "id": 419347194,
+    "center": {
+     "lat": -30.0290176,
+     "lon": -51.2048693
+    },
+    "tags": {
+     "addr:housenumber": "233",
+     "addr:postcode": "90430-001",
+     "addr:street": "Rua Mostardeiro",
+     "alt_name": "Pronto Socorro Traumazul",
+     "amenity": "hospital",
+     "building": "yes",
+     "check_date": "2026-05-04",
+     "healthcare": "hospital",
+     "name": "Pronto Socorro Cruz Azul",
+     "phone": "+55 51 3222-7777",
+     "ref:CNES": "5289327",
+     "ref:vatin": "BR94235447000193",
+     "website": "https://www.prontosocorrocruzazul.com.br/"
+    }
+   },
+   {
+    "type": "way",
+    "id": 419349375,
+    "center": {
+     "lat": -30.0235715,
+     "lon": -51.2105282
+    },
+    "tags": {
+     "addr:postcode": "90560-001",
+     "addr:street": "Avenida Cristóvão Colombo",
+     "amenity": "clinic",
+     "building": "yes",
+     "building:levels": "3",
+     "healthcare": "clinic",
+     "name": "ECO-SALVA"
+    }
+   },
+   {
+    "type": "way",
+    "id": 420866355,
+    "center": {
+     "lat": -30.023965,
+     "lon": -51.2008983
+    },
+    "tags": {
+     "amenity": "clinic",
+     "building": "yes",
+     "description": "CENTRO DE DIAGNÓTICO UNIMED",
+     "healthcare": "clinic",
+     "name": "Unimed",
+     "note": "Nome em description"
+    }
+   },
+   {
+    "type": "way",
+    "id": 420866363,
+    "center": {
+     "lat": -30.0221688,
+     "lon": -51.1996605
+    },
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "764",
+     "addr:postcode": "90570-040",
+     "addr:street": "Rua Doutor Timóteo",
+     "addr:suburb": "Moinhos de Vento",
+     "amenity": "clinic",
+     "building": "yes",
+     "healthcare": "clinic",
+     "healthcare:speciality": "ophthalmology",
+     "name": "Retina Center",
+     "ref:CNES": "7670370",
+     "ref:vatin": "BR04811793000180"
+    }
+   },
+   {
+    "type": "way",
+    "id": 420868536,
+    "center": {
+     "lat": -30.0239029,
+     "lon": -51.2006954
+    },
+    "tags": {
+     "amenity": "clinic",
+     "building": "yes",
+     "healthcare": "clinic",
+     "name": "Unimed"
+    }
+   },
+   {
+    "type": "way",
+    "id": 421390818,
+    "center": {
+     "lat": -30.0410015,
+     "lon": -51.2152964
+    },
+    "tags": {
+     "amenity": "clinic",
+     "building": "yes",
+     "healthcare": "clinic",
+     "name": "Clínica Beira Rio, Ltda."
+    }
+   },
+   {
+    "type": "way",
+    "id": 421391007,
+    "center": {
+     "lat": -30.0402174,
+     "lon": -51.2043582
+    },
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "255",
+     "addr:postcode": "90610-270",
+     "addr:street": "Rua Silva Só",
+     "addr:suburb": "Santa Cecilia",
+     "amenity": "clinic",
+     "building": "yes",
+     "healthcare": "clinic",
+     "name": "FUGAST",
+     "ref:CNES": "3343456",
+     "ref:vatin": "BR88002027000164"
+    }
+   },
+   {
+    "type": "way",
+    "id": 425216181,
+    "center": {
+     "lat": -30.0618657,
+     "lon": -51.1493243
+    },
+    "tags": {
+     "amenity": "clinic",
+     "building": "yes",
+     "healthcare": "clinic",
+     "name": "Clínica Radiológica Porto AlegreCLINICA RADIOLÓGICA PORTO ALEGRE"
+    }
+   },
+   {
+    "type": "way",
+    "id": 425400958,
+    "center": {
+     "lat": -30.0760048,
+     "lon": -51.161453
+    },
+    "tags": {
+     "amenity": "clinic",
+     "building": "hospital",
+     "healthcare": "clinic"
+    }
+   },
+   {
+    "type": "way",
+    "id": 425565073,
+    "center": {
+     "lat": -30.0849361,
+     "lon": -51.1877293
+    },
+    "tags": {
+     "addr:housenumber": "145",
+     "addr:street": "Rua da Gruta",
+     "addr:suburb": "Cascata",
+     "amenity": "hospital",
+     "contact:phone": "+55 51 3320-6000",
+     "contact:website": "http://www.divinaprovidencia.org.br",
+     "emergency": "yes",
+     "healthcare": "hospital",
+     "name": "Hospital Divina Providência",
+     "operator:ref:vatin": "BR87317764000193",
+     "ref:CNES": "2237598",
+     "ref:vatin": "BR87317764001084"
+    }
+   },
+   {
+    "type": "way",
+    "id": 425845238,
+    "center": {
+     "lat": -30.0867198,
+     "lon": -51.2253246
+    },
+    "tags": {
+     "amenity": "clinic",
+     "building": "yes",
+     "healthcare": "clinic",
+     "name": "Posto de Saúde Familiar Orfanotrófio II",
+     "note": "Nome em description"
+    }
+   },
+   {
+    "type": "way",
+    "id": 426331685,
+    "center": {
+     "lat": -29.9933485,
+     "lon": -51.2249069
+    },
+    "tags": {
+     "amenity": "clinic",
+     "building": "hospital",
+     "healthcare": "clinic",
+     "name": "Unidade Básica de Saúde Ilha dos Marinheiros"
+    }
+   },
+   {
+    "type": "way",
+    "id": 426492828,
+    "center": {
+     "lat": -29.9824791,
+     "lon": -51.1346593
+    },
+    "tags": {
+     "amenity": "clinic",
+     "building": "school",
+     "description": "E.E.E.F. DECIO MARTINS DA COSTA",
+     "healthcare": "clinic",
+     "name": "UBS Nova Brasília",
+     "note": "Nome em description",
+     "operator": "Sistema Único de Saúde",
+     "operator:short": "SUS",
+     "operator:type": "public",
+     "operator:wikidata": "Q7531056"
+    }
+   },
+   {
+    "type": "way",
+    "id": 426623397,
+    "center": {
+     "lat": -30.0277412,
+     "lon": -51.2531695
+    },
+    "tags": {
+     "amenity": "clinic",
+     "building": "yes",
+     "name": "Unidade Básica de Saúde Ilha Pintada"
+    }
+   },
+   {
+    "type": "way",
+    "id": 427139104,
+    "center": {
+     "lat": -30.0353026,
+     "lon": -51.1574395
+    },
+    "tags": {
+     "addr:housenumber": "487",
+     "addr:postcode": "91330-570",
+     "addr:street": "Rua Araruama",
+     "addr:suburb": "Bairro Vila Jardim",
+     "amenity": "clinic",
+     "building": "yes",
+     "healthcare": "clinic",
+     "name": "Unidade de Saúde Barão de Bagé",
+     "opening_hours": "Mo-Fr 07:00-18:00; Mo 07:00-13:00,14:00-18:00; We 07:00-13:00,14:00-18:00",
+     "operator:ref:vatin": "BR92963560000160",
+     "phone": "+55 51 3334-7196",
+     "ref:CNES": "2265141",
+     "source": "https://prefeitura.poa.br/carta-de-servicos/atencao-primaria-saude-unidades-de-saude"
+    }
+   },
+   {
+    "type": "way",
+    "id": 427381575,
+    "center": {
+     "lat": -30.0712626,
+     "lon": -51.1550764
+    },
+    "tags": {
+     "amenity": "clinic",
+     "building": "hospital",
+     "healthcare": "clinic",
+     "name": "Unidade de Saúde Pitoresca SUS"
+    }
+   },
+   {
+    "type": "way",
+    "id": 427504382,
+    "center": {
+     "lat": -30.087459,
+     "lon": -51.1882386
+    },
+    "tags": {
+     "amenity": "clinic",
+     "barrier": "fence",
+     "healthcare": "clinic",
+     "name": "Clínica São José",
+     "website": "https://www.clinicasaojose.com.br/"
+    }
+   },
+   {
+    "type": "way",
+    "id": 428349657,
+    "center": {
+     "lat": -30.0245483,
+     "lon": -51.1029087
+    },
+    "tags": {
+     "addr:housenumber": "675",
+     "addr:postcode": "91250-320",
+     "addr:street": "Rua Wolfram Metzler",
+     "amenity": "clinic",
+     "building": "yes",
+     "healthcare": "clinic",
+     "name": "Unidade Básica de Saúde Rubem Berta",
+     "operator:ref:vatin": "BR92963560000160",
+     "ref:CNES": "2264862",
+     "short_name": "UBS Rubem Berta"
+    }
+   },
+   {
+    "type": "way",
+    "id": 442584818,
+    "center": {
+     "lat": -30.0289013,
+     "lon": -51.2188248
+    },
+    "tags": {
+     "amenity": "hospital",
+     "healthcare": "hospital",
+     "name": "Hospital Beneficência Portuguesa",
+     "phone": "+55 51 3023-9000",
+     "website": "http://www.beneficenciars.org.br/",
+     "wikidata": "Q9654217",
+     "wikipedia": "pt:Beneficência Portuguesa de Porto Alegre"
+    }
+   },
+   {
+    "type": "way",
+    "id": 445934897,
+    "center": {
+     "lat": -30.075821,
+     "lon": -51.1633358
+    },
+    "tags": {
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Unidade de Saúde da Família Ernesto Araújo"
+    }
+   },
+   {
+    "type": "way",
+    "id": 461600491,
+    "center": {
+     "lat": -30.0245999,
+     "lon": -51.2140622
+    },
+    "tags": {
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Porto Alegre Clínicas"
+    }
+   },
+   {
+    "type": "way",
+    "id": 461600492,
+    "center": {
+     "lat": -30.0262602,
+     "lon": -51.2145949
+    },
+    "tags": {
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "name": "Policlínica Central"
+    }
+   },
+   {
+    "type": "way",
+    "id": 462555353,
+    "center": {
+     "lat": -30.0000573,
+     "lon": -51.2002961
+    },
+    "tags": {
+     "amenity": "clinic",
+     "healthcare": "clinic"
+    }
+   },
+   {
+    "type": "way",
+    "id": 484571094,
+    "center": {
+     "lat": -30.1111394,
+     "lon": -51.254595
+    },
+    "tags": {
+     "addr:housenumber": "2442",
+     "addr:street": "Avenida Wenceslau Escobar",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "landuse": "commercial",
+     "name": "Unidade Básica de Saúde Tristeza",
+     "opening_hours": "Mo-Fr 07:00-18:00",
+     "phone": "+55 51 3268-8703",
+     "short_name": "UBS Tristeza"
+    }
+   },
+   {
+    "type": "way",
+    "id": 485578679,
+    "center": {
+     "lat": -30.0508821,
+     "lon": -51.2179488
+    },
+    "tags": {
+     "addr:housenumber": "624",
+     "addr:postcode": "90160-180",
+     "addr:street": "Avenida Erico Veríssimo",
+     "amenity": "clinic",
+     "email": "radicom@radicom.com.br",
+     "healthcare": "clinic",
+     "landuse": "commercial",
+     "name": "Radicom",
+     "opening_hours": "Mo-Fr 07:30-23:00; Sa 07:00-15:00",
+     "phone": "+55 51 3218-2400",
+     "ref:CNES": "2262592",
+     "ref:vatin": "BR89515696000100",
+     "website": "https://radicom.com.br/"
+    }
+   },
+   {
+    "type": "way",
+    "id": 485713863,
+    "center": {
+     "lat": -30.032264,
+     "lon": -51.2072254
+    },
+    "tags": {
+     "addr:housenumber": "485",
+     "addr:postcode": "90420-111",
+     "addr:street": "Rua Vasco da Gama",
+     "amenity": "clinic",
+     "barrier": "fence",
+     "email": "caf@caffisioterapia.com.br",
+     "fence_type": "metal",
+     "healthcare": "clinic",
+     "landuse": "commercial",
+     "name": "CAF Fisioterapia",
+     "opening_hours": "Mo-Fr 07:00-20:00; Sa 08:00-12:00",
+     "phone": "+55 51 3022-6605",
+     "ref:CNES": "677019",
+     "ref:vatin": "BR06044899000120",
+     "website": "http://www.caffisioterapia.com.br/"
+    }
+   },
+   {
+    "type": "way",
+    "id": 496501762,
+    "center": {
+     "lat": -30.1160713,
+     "lon": -51.2278884
+    },
+    "tags": {
+     "addr:housenumber": "350",
+     "addr:postcode": "91920-260",
+     "addr:street": "Rua da Fé",
+     "amenity": "clinic",
+     "barrier": "fence",
+     "fence_type": "chain_link",
+     "healthcare": "clinic",
+     "name": "Unidade Básica de Saúde Cidade de Deus",
+     "opening_hours": "Mo-Fr 08:00-12:00,13:00-17:00",
+     "operator:ref:vatin": "BR92963560000160",
+     "phone": "+55 51 3248-3477",
+     "ref:CNES": "2264420",
+     "short_name": "UBS Cidade de Deus",
+     "start_date": "1996"
+    }
+   },
+   {
+    "type": "way",
+    "id": 497895023,
+    "center": {
+     "lat": -30.1081745,
+     "lon": -51.2347926
+    },
+    "tags": {
+     "addr:housenumber": "176",
+     "addr:postcode": "91920-560",
+     "addr:street": "Rua Doutor Pitta Pinheiro Filho",
+     "amenity": "clinic",
+     "barrier": "fence",
+     "fence_type": "metal",
+     "healthcare": "clinic",
+     "name": "Unidade Básica de Saúde Camaquã",
+     "opening_hours": "Mo-Fr 07:00-18:00",
+     "operator": "SMS",
+     "operator:ref:vatin": "BR92963560000160",
+     "phone": "+55 51 3249-2799",
+     "ref:CNES": "2264528",
+     "short_name": "UBS Camaquã"
+    }
+   },
+   {
+    "type": "way",
+    "id": 503401960,
+    "center": {
+     "lat": -29.9936239,
+     "lon": -51.12839
+    },
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "6615",
+     "addr:postcode": "91140-001",
+     "addr:street": "Avenida Assis Brasil",
+     "addr:suburb": "Sarandi",
+     "amenity": "clinic",
+     "healthcare": "clinic",
+     "loc_name": "Posto de Saúde Assis Brasil",
+     "name": "Unidade Básica de Saúde Assis Brasil",
+     "opening_hours": "Mo-Fr 07:00-18:00",
+     "operator:ref:vatin": "BR92963560000160",
+     "phone": "+55 51 3364-5071",
+     "ref:CNES": "2237245",
+     "short_name": "UBS Assis Brasil"
+    }
+   },
+   {
+    "type": "way",
+    "id": 503401961,
+    "center": {
+     "lat": -29.9949281,
+     "lon": -51.1341364
+    },
+    "tags": {
+     "addr:housenumber": "341",
+     "addr:postcode": "91110-350",
+     "addr:street": "Rua Francisco Pinto da Fontoura",
+     "amenity": "clinic",
+     "barrier": "fence",
+     "fence_type": "metal",
+     "healthcare": "clinic",
+     "loc_name": "Posto de Saúde Sarandi",
+     "name": "Unidade Básica de Saúde Sarandi",
+     "opening_hours": "Mo-Fr 07:00-18:00",
+     "operator:ref:vatin": "BR92963560000160",
+     "phone": "+55 51 3365-3177",
+     "ref:CNES": "2264684",
+     "short_name": "UBS Sarandi"
+    }
+   },
+   {
+    "type": "way",
+    "id": 1066302991,
+    "center": {
+     "lat": -30.0342402,
+     "lon": -51.2106571
+    },
+    "tags": {
+     "addr:housenumber": "542",
+     "addr:postcode": "90035-090",
+     "addr:street": "Rua Fernandes Vieira",
+     "amenity": "hospital",
+     "healthcare": "hospital",
+     "name": "Suksteris - Núcleo de Medicina",
+     "phone": "+55 51 3019-1440",
+     "website": "https://nucleosuksteris.com.br/"
+    }
+   },
+   {
+    "type": "way",
+    "id": 1070603549,
+    "center": {
+     "lat": -30.0409439,
+     "lon": -51.1941115
+    },
+    "tags": {
+     "addr:housenumber": "2040",
+     "addr:street": "Rua Coronel Lucas de Oliveira",
+     "amenity": "hospital",
+     "check_date": "2024-07-19",
+     "contact:phone": "+55 51 3331-6700",
+     "contact:website": "http://www.hospitalpetropolis.com.br",
+     "healthcare": "hospital",
+     "name": "Hospital Petrópolis"
+    }
+   },
+   {
+    "type": "way",
+    "id": 1123174691,
+    "center": {
+     "lat": -30.0515541,
+     "lon": -51.1646295
+    },
+    "tags": {
+     "addr:housenumber": "90",
+     "addr:postcode": "91420-634",
+     "addr:street": "Jayr Amaury Koebe",
+     "addr:suburb": "Bom Jesus",
+     "amenity": "clinic",
+     "building": "yes",
+     "healthcare": "clinic",
+     "name": "Unidade de Saúde Mato Sampaio",
+     "opening_hours": "Mo-Fr 08:00-20:00",
+     "operator:ref:vatin": "BR92963560000160",
+     "ref:CNES": "2264765",
+     "website": "http://cnes.datasus.gov.br/pages/estabelecimentos/ficha/identificacao/4314902264765"
+    }
+   },
+   {
+    "type": "way",
+    "id": 1293513419,
+    "center": {
+     "lat": -30.067908,
+     "lon": -51.1770285
+    },
+    "tags": {
+     "amenity": "hospital",
+     "healthcare": "hospital"
+    }
+   },
+   {
+    "type": "way",
+    "id": 1365629576,
+    "center": {
+     "lat": -30.0314695,
+     "lon": -51.2223542
+    },
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "75",
+     "addr:postcode": "90035-074",
+     "addr:street": "Avenida Independência",
+     "amenity": "hospital",
+     "building": "hospital",
+     "emergency": "yes",
+     "healthcare": "hospital",
+     "name": "Hospital Nora Teixeira",
+     "operator": "Santa Casa de Porto Alegre",
+     "operator:type": "private"
+    }
+   },
+   {
+    "type": "relation",
+    "id": 3410436,
+    "center": {
+     "lat": -30.030927,
+     "lon": -51.2227966
+    },
+    "tags": {
+     "amenity": "hospital",
+     "building": "hospital",
+     "building:levels": "4",
+     "emergency": "yes",
+     "healthcare": "hospital",
+     "name": "Hospital Santa Clara",
+     "type": "multipolygon",
+     "wikidata": "Q3145231"
+    }
+   },
+   {
+    "type": "relation",
+    "id": 6232100,
+    "center": {
+     "lat": -30.0295455,
+     "lon": -51.2147297
+    },
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "661",
+     "addr:postcode": "90035-052",
+     "addr:street": "Avenida Independência",
+     "addr:suburb": "Bom Fim",
+     "amenity": "hospital",
+     "building": "hospital",
+     "building:levels": "8",
+     "healthcare": "hospital",
+     "name": "Hospital Presidente Vargas",
+     "operator:ref:vatin": "BR92963560000160",
+     "ref:CNES": "2237822",
+     "type": "multipolygon"
+    }
+   },
+   {
+    "type": "relation",
+    "id": 6346576,
+    "center": {
+     "lat": -29.9886782,
+     "lon": -51.1168542
+    },
+    "tags": {
+     "addr:city": "Porto Alegre",
+     "addr:housenumber": "235",
+     "addr:street": "Beco José Paris",
+     "addr:suburb": "Sarandi",
+     "amenity": "clinic",
+     "building": "yes",
+     "healthcare": "clinic",
+     "name": "Posto de Saúde",
+     "operator": "Prefeitura Municipal de Porto Alegre",
+     "operator:ref:vatin": "BR92963560000160",
+     "operator:type": "government",
+     "ref:CNES": "2265206",
+     "type": "multipolygon"
+    }
+   },
+   {
+    "type": "relation",
+    "id": 6354469,
+    "center": {
+     "lat": -30.0359364,
+     "lon": -51.1485887
+    },
+    "tags": {
+     "addr:housenumber": "830",
+     "addr:street": "Rua Ernesto Pellanda",
+     "addr:suburb": "Bairro Vila Jardim",
+     "amenity": "clinic",
+     "building": "yes",
+     "healthcare": "clinic",
+     "name": "Unidade de Saúde SESC",
+     "opening_hours": "Mo-Fr 07:00-18:00; Mo 07:00-13:00,14:00-18:00; We 07:00-13:00,14:00-18:00",
+     "phone": "+55 51 3334-8383",
+     "source": "https://prefeitura.poa.br/carta-de-servicos/atencao-primaria-saude-unidades-de-saude",
+     "type": "multipolygon"
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,8 @@
+categoria,nome,removido,mantido,distancia_m,par
+abrigos,Abrigo Cônego Paulo De Nadal,node/5404423950,way/288381201,11.9,node+way
+escolas,Colégio Sinodal do Salvador,node/11030466129,way/367324147,23.7,node+way
+escolas,Escola Estadual de 1° Grau Professora Dinah Néri Pereira,node/7223276683,node/6238095094,1.7,node+node
+escolas,Escola Saint Hilaire,way/428647547,way/231949173,45.6,way+way
+escolas,Escola Visconde do Rio Grande,way/427660469,way/243463347,27.8,way+way
+saude,Unimed,way/420868536,way/420866355,20.7,way+way
+saude,Unimed,node/4117912914,node/4117912915,21.6,node+node
