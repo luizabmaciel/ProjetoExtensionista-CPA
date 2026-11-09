@@ -1,0 +1,29 @@
+# Ambiente virtual — nunca vai para o repositório. Cada um cria o seu
+# com o requirements.txt.
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dados brutos: 37 MB de GeoJSON e GeoPackage que o
+# scripts/coleta_bairros.py baixa de novo em um comando. O que fica versionado
+# é o manifesto da coleta (URL, MD5, data, tamanho) — ele é a prova de onde o
+# dado veio e serve para conferir se o download de hoje é igual ao de ontem.
+dados/originais/*.geojson
+dados/originais/poageodata/
+
+# O data.json fica versionado: veio do INCT, nenhum script baixa, e sem ele a
+# limpeza não roda. São 1,1 MB.
+
+# Editores / sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

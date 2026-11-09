@@ -1,0 +1,12 @@
+# Bases 3 e 4 do Projeto Extensionista INCT SiMAI.
+# Instalar com:  pip install -r requirements.txt
+#
+# Para congelar as versões exatas da sua máquina (como na Aula 12):
+#   pip freeze > requirements.txt
+
+geopandas>=1.0
+pyogrio>=0.9          # driver de leitura de GeoPackage e GeoJSON
+pandas>=2.0
+matplotlib>=3.8
+jupyter>=1.0
+ipykernel>=6.29       # para o VS Code enxergar o kernel do .venv
