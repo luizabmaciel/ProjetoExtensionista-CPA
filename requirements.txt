@@ -1,0 +1,16 @@
+# Versões utilizadas no ambiente do projeto (Python 3.11).
+
+# Coleta e extração de tabelas do Atlas
+requests==2.34.2
+pdfplumber==0.11.10
+
+# Preparação tabular e geoespacial
+pandas==3.0.6
+geopandas==1.2.0
+pyogrio==0.13.0
+shapely==2.2.0
+pyarrow==26.0.0
+
+# Execução interativa dos notebooks
+ipykernel==7.3.0
+jupyterlab==4.6.3
