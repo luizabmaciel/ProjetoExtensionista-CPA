@@ -1,0 +1,91 @@
+RELATÓRIO DE PROCESSAMENTO E PREPARAÇÃO
+Projeto extensionista — INCT SIMAI
+
+1. ORGANIZAÇÃO E REPRODUTIBILIDADE
+
+O processamento utiliza scripts de coleta e notebooks de exploração e preparação. As fontes originais são preservadas em dados/brutos/, as tabelas extraídas do Atlas em dados/extraidos/ e os produtos preparados em dados/tratados/. Os requisitos Python constam em requirements.txt.
+
+Os notebooks estão organizados em notebooks/atlas/ e notebooks/cheias_guaiba/. A execução pressupõe o diretório do respectivo notebook como diretório de trabalho, definindo a raiz do projeto por Path.cwd().resolve().parents[1], dois níveis acima. As exportações utilizam caminhos relativos à raiz. A reexecução recria os arquivos tratados com os procedimentos definidos, sem alterar as fontes originais.
+
+2. PREPARAÇÃO DO ATLAS
+
+O PDF foi coletado com requests e as tabelas foram extraídas com pdfplumber. As páginas 43, 44 e 45 originaram três CSVs. Na página 43, a primeira coluna reúne os municípios de risco muito alto e as duas seguintes os de risco alto. Nas páginas 44 e 45, as três colunas correspondem, respectivamente, a risco médio e baixo.
+
+Os rótulos de risco foram separados dos nomes dos municípios. As colunas de nomes foram reunidas verticalmente e associadas às classificações. Células vazias de organização das tabelas foram desconsideradas nos procedimentos definidos no notebook.
+
+As tabelas foram concatenadas em 346 registros com as colunas municipio e risco, preservando as quantidades entre parênteses nos rótulos originais. O resultado foi exportado para dados/tratados/atlas_2025_processado.csv.
+
+A conferência dos nomes com uma referência municipal e a avaliação de cobertura completa do Atlas permanecem pendentes. O notebook não contém uma rotina explícita de validação final desses aspectos.
+
+3. EXPLORAÇÃO DO GEOPACKAGE
+
+A exploração inicial identificou 43 camadas e reuniu nomes, quantidade de registros, atributos, tipos geométricos e sistemas de referência. A função exploracao_inicial apresenta até 100 linhas por camada, além de tipos, ausências, duplicatas, CRS e estatísticas sobre a camada completa.
+
+As verificações adicionais distinguem ausências, textos vazios, geometrias vazias e inválidas e repetições de coordenadas. Repetição de nome ou localização não é considerada, isoladamente, evidência suficiente para exclusão. As camadas foram agrupadas por tema e confrontadas com o glossário.
+
+4. BAIRROS
+
+Foram avaliados os 83 registros de poa_admin_bairros. Não foram encontrados nomes ou códigos repetidos, nem geometrias nulas, vazias ou inválidas. Os 94 nomes do JSON são iguais em todos os 71 cenários.
+
+A comparação utiliza chaves auxiliares sem acentos, diferenças de caixa ou espaços repetidos, preservando os nomes originais. Foram adotadas quatro equivalências:
+- CEL APARICIO BORGES: Coronel Aparício Borges.
+- MONTSERRAT: Mont'Serrat.
+- PASSO DAREIA: Passo D'Areia.
+- SAO JOSE: Vila São José.
+
+A equivalência de São José tem apoio na localização do polígono e na associação ao Partenon, sem comprovar igualdade dos limites adotados nas duas fontes. Após as equivalências, os 83 registros encontraram correspondência no JSON. Onze nomes do JSON permanecem sem geometria correspondente confirmada, sem exclusão de seus indicadores.
+
+Foram selecionados nmbop, cdbop, bairro_json, cota_mean e geometry. O atributo cota_mean foi preservado como provável elevação média, com unidade, referência vertical e metodologia não confirmadas. Não é usado para calcular profundidade ou classificar inundação.
+
+5. ESCOLAS
+
+Foram preservados os 1.062 registros e os atributos INEP, Name, C__digo, BAIRRO_GEO, Redes_de_E e geometry. Não houve alteração de coordenadas ou remoção de registros.
+
+A verificação espacial não encontrou geometrias nulas, vazias ou inválidas. Foram identificados 26 registros em 12 posições horizontais compartilhadas. Na comparação com a união dos polígonos de bairros, 1.057 pontos intersectam a cobertura ou sua borda e cinco ficam fora, a distâncias entre aproximadamente 2,78 e 85,36 metros.
+
+Foi decidido considerar os cinco casos pertencentes a Porto Alegre com base nos bairros informados, sem corrigir coordenadas ou alterar o resultado geométrico da comparação. A existência, o endereço e a oferta educacional dos estabelecimentos em 2024 não foram confirmados por uma base externa.
+
+6. CADASTRO SUS
+
+Foram mantidos os atributos id01, Name, classe e geometry. Dos 353 registros originais, 223 compartilham coordenadas em 89 locais; há 219 posições horizontais distintas. Foram identificados 67 grupos com nome e categoria repetidos na mesma posição e 20 nomes presentes em posições diferentes.
+
+Foi decidido remover somente ocorrências excedentes com Name, classe e X/Y exatamente iguais, mantendo a primeira de cada grupo. A comparação desconsidera Z e não aplica arredondamento ou normalização dos nomes. Registros com classe ou posição diferente foram preservados. Foram removidas 67 ocorrências excedentes, resultando em 286 registros.
+
+Os identificadores dos registros removidos e preservados estão relacionados nas tabelas do notebook. As geometrias e os atributos dos registros mantidos não foram modificados. O procedimento não equivale a uma validação externa da identidade de cada serviço.
+
+7. ATENÇÃO PRIMÁRIA
+
+As versões de 09 e 10/05/2024 foram analisadas antes dos ajustes. Inicialmente, 135 unidades apresentaram correspondência textual e posições iguais; um nome era exclusivo de cada versão. Nove unidades correspondentes apresentavam situação diferente entre os registros.
+
+Foi adotada a correspondência entre o registro denominado “Fechada” em 09/05 e “US Sarandi” em 10/05. As cópias preparadas utilizam US Sarandi, bairro Sarandi e situação Fechada em ambas as datas. A situação original de 09/05 era Aberta; a versão de 10/05 já informava Fechada.
+
+Na US Nossa Senhora Aparecida, o campo Cidade continha Fechada. Foi adotado Porto Alegre e o endereço composto foi reconstruído com o município. Também foi adotada a situação Fechada nas duas versões, originalmente informadas como Aberta. Essa classificação decorre da hipótese considerada sobre o impacto das enchentes no Sarandi; não constitui confirmação documental de fechamento ou de sua causa.
+
+As alterações foram registradas com valores anteriores e novos, preservando as camadas originais. Após os ajustes, as 136 unidades apresentam correspondência textual entre versões. Cada data foi exportada separadamente, sem soma ou integração automática com o cadastro SUS.
+
+8. MANCHAS HISTÓRICAS ESTIMADAS
+
+Foram preparadas as camadas de 1941, 1967, setembro de 2023 e novembro de 2023, com 248, 507, 526 e 424 registros. Não foram identificadas geometrias nulas, vazias ou inválidas, linhas inteiramente duplicadas ou repetições exatas de WKB. O código dn vale 1 em todos os registros; sua definição permanece pendente.
+
+A cobertura territorial utilizada é a união dos 83 polígonos originais de poa_admin_bairros, carregados na seção de bairros. As áreas dentro e fora dessa cobertura foram calculadas pela união de cada mancha. Entre aproximadamente 0,73% e 1,00% da área de cada mancha está fora da cobertura dos bairros. Esses trechos não foram recortados ou removidos.
+
+O campo area_ha apresenta 221 zeros na camada de 1941 e 316 ausências na de setembro de 2023. As demais duas camadas não possuem esse atributo. Foi criada area_ha_calculada nas quatro cópias preparadas, utilizando a área das geometrias em EPSG:31982 e dividindo os valores em metros quadrados por 10.000 para obter hectares.
+
+As geometrias, os atributos e os valores de area_ha original foram preservados. A nova área descreve os polígonos disponíveis; não confirma a precisão das manchas ou a extensão efetivamente inundada. A soma por polígono deve ser distinguida da área da união quando houver sobreposições.
+
+9. PRODUTOS E CONFERÊNCIA
+
+Além do CSV do Atlas, foram gerados nove GeoParquet:
+- poa_admin_bairros.parquet: 83 registros.
+- poa_edu_escolas.parquet: 1.062 registros.
+- poa_saude_sus.parquet: 286 registros.
+- poa_saude_unidades_atencao_primaria_09052024.parquet: 136 registros.
+- poa_saude_unidades_atencao_primaria_10052024.parquet: 136 registros.
+- poa_inundacao_1941_475cm.parquet: 248 registros.
+- poa_inundacao_1967_313cm.parquet: 507 registros.
+- poa_inundacao_2023_set_318cm.parquet: 526 registros.
+- poa_inundacao_2023_nov_346cm.parquet: 424 registros.
+
+Cada GeoParquet foi relido para conferir quantidade de registros, colunas, tipos, valores, CRS e geometrias em relação à versão preparada. Essa conferência valida a preservação na exportação, não a veracidade externa ou a completude das fontes.
+
+As análises de exposição e os cruzamentos entre manchas e estabelecimentos permanecem possibilidades de trabalho posterior. As referências temporais, hipóteses de funcionamento e divergências documentais devem acompanhar qualquer interpretação dos produtos.

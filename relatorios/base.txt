@@ -1,0 +1,62 @@
+RELATÓRIO DAS BASES DE DADOS
+Projeto extensionista — INCT SIMAI
+
+1. OBJETIVO
+
+O trabalho investiga fontes públicas sobre inundações no Rio Grande do Sul, com foco em Porto Alegre, para identificar informações complementares aos cenários disponíveis no INCT SIMAI. A avaliação considera conteúdo, qualidade, cobertura, referência temporal e possibilidades de análise. A utilização conjunta das fontes depende de compatibilidade metodológica e territorial, não sendo pressuposta uma integração de todas as bases.
+
+2. ATLAS DE RISCO DE INUNDAÇÕES DO RIO GRANDE DO SUL — 2025
+
+O Atlas, disponibilizado pela Secretaria do Meio Ambiente e Infraestrutura do Rio Grande do Sul (SEMA/RS), foi obtido em PDF. As tabelas das páginas 43, 44 e 45 foram extraídas para CSV e reorganizadas em registros de município e classificação de risco.
+
+Fonte: https://sema.rs.gov.br/upload/arquivos/202511/27165358-atlas.pdf
+
+O conjunto preparado contém 346 registros: 43 classificados como risco muito alto, 82 como alto, 108 como médio e 113 como baixo. Essas quantidades se referem às tabelas processadas e não comprovam cobertura de todos os municípios ou categorias do documento. A classificação municipal pode apoiar contextualização regional e análises descritivas, mas não deve ser atribuída diretamente aos bairros de Porto Alegre.
+
+3. GEOPACKAGE DAS CHEIAS DE MAIO DE 2024
+
+O arquivo cheias_rhguaiba_2024_db_v5.gpkg foi obtido no Zenodo. Ele possui 471.748.608 bytes e reúne 43 camadas geográficas. A verificação estrutural SQLite apresentou resultado “ok”; esse resultado não substitui uma verificação por checksum nem valida o conteúdo geográfico.
+
+Fonte: https://zenodo.org/records/11185049
+Arquivo: https://zenodo.org/records/11185049/files/cheias_rhguaiba_2024_db_v5.gpkg?download=1
+Documentação local: dados/cheias_rhguaiba_2024_db_v5_glossario.csv
+
+A exploração abrangeu referências territoriais, educação, saúde, assistência social, abastecimento, drenagem e proteção, abrigos, estimativas históricas, simulações, produtos de sensoriamento remoto e suscetibilidade a movimentos de massa. As fontes possuem abrangências, datas e métodos distintos.
+
+4. JSON DE CENÁRIOS DO INCT
+
+O arquivo dados/data.json contém 71 cenários nominais, de 3,0 a 10,0 metros em intervalos de 0,1 metro. Cada cenário apresenta 94 nomes de bairros, totalizando 6.674 registros. Os campos disponíveis são affected_buildings, total_buildings, percentage, population e affected_population.
+
+O JSON não fornece geometrias nem identificadores territoriais comuns aos da camada de bairros. Os campos de edificações não permitem afirmar, isoladamente, que se tratem apenas de estabelecimentos comerciais. A metodologia dos indicadores e a referência das cotas precisam ser consideradas em eventuais comparações.
+
+5. BASES SELECIONADAS PARA PREPARAÇÃO
+
+Referência territorial: poa_admin_bairros, com 83 registros. A camada fornece polígonos, nomes e códigos para mapas e possíveis agrupamentos territoriais.
+
+Educação: poa_edu_escolas, com 1.062 registros. Foram priorizadas identificação, rede de ensino, bairro e localização. Matrículas e indicadores educacionais não integram a seleção atual.
+
+Saúde: poa_saude_sus, originalmente com 353 registros. A camada oferece identificação de registros, nomes, categorias e localização. Após remoção de ocorrências excedentes pelo critério documentado, foram preservados 286 registros.
+
+Atenção primária: poa_saude_unidades_atencao_primaria_09052024 e poa_saude_unidades_atencao_primaria_10052024, com 136 registros em cada versão. As datas são mantidas separadas para preservar os recortes do cadastro.
+
+Inundação: poa_inundacao_1941_475cm, poa_inundacao_1967_313cm, poa_inundacao_2023_set_318cm e poa_inundacao_2023_nov_346cm, com 248, 507, 526 e 424 registros, respectivamente. O glossário as descreve como manchas estimadas de eventos históricos; não são automaticamente consideradas observações diretas.
+
+As simulações do GeoPackage ficaram fora da preparação porque o INCT já dispõe de cenários para Porto Alegre. As camadas nominais de 2015 e 2024 também ficaram fora: suas descrições no glossário mencionam simulações e cotas divergentes. A seleção das quatro manchas históricas não constitui comprovação de ausência de modelagem em sua produção.
+
+As demais camadas permanecem fora do foco inicial, sem descarte definitivo.
+
+6. LIMITAÇÕES DOCUMENTAIS E DE QUALIDADE
+
+O glossário apresenta divergências de cotas, datas, abrangências e descrições. Entre elas estão a data de ADA, as descrições das camadas de 2015 e 2024, as cotas dos cenários de 500 e 550 cm e a abrangência trocada entre Caí e Pardo. A descrição de poa_saude_sus é incompatível com os atributos de serviços de saúde encontrados.
+
+A área diretamente afetada (ADA) é descrita como derivada de manchas de água e lama. A severidade HEC-RAS combina velocidade e profundidade, com ressalvas sobre batimetria e resolução. Os produtos Planet/Skysat combinam imagens, elevação e interpolação de cotas, não correspondendo apenas a contornos extraídos diretamente das imagens.
+
+A assistência social apresenta 171 geometrias vazias em 220 registros. Os cadastros de abrigos contêm ausências, duplicações, mudanças de esquema, datas ambíguas e possível desalinhamento de colunas. As informações de funcionamento de infraestruturas incluem vazios que não comprovam operação normal. Esses problemas contribuíram para delimitar o foco da preparação.
+
+7. POSSIBILIDADES DE ANÁLISE
+
+As bases preparadas podem apoiar mapas e avaliações de exposição espacial de escolas e serviços de saúde às manchas históricas, por bairro ou categoria de serviço. Quantidades e proporções dependem de denominadores e cobertura explícitos.
+
+Outra possibilidade é investigar dados de desempenho no ENEM 2024 e a viabilidade de relacioná-los às escolas. Sua disponibilidade e granularidade ainda não foram verificadas. Um estudo sobre efeitos educacionais exigiria referência temporal das escolas, resultados anteriores e posteriores, grupos comparáveis e avaliação da participação no exame.
+
+Interseção com uma mancha não comprova danos, fechamento de serviços ou efeito causal. A seleção e preparação disponibilizam dados para análises posteriores, sem demonstrar esses impactos.
