@@ -1,0 +1,43 @@
+# Python: caches e ambientes locais
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.conda/
+.python-version
+
+# Jupyter: checkpoints e arquivos temporários
+.ipynb_checkpoints/
+.ipython/
+
+# Configurações locais e credenciais
+.vscode/
+.idea/
+.env
+.env.*
+!.env.example
+
+# Dados brutos: obtidos pelos scripts de coleta
+/dados/brutos/**
+!/dados/brutos/**/
+!/dados/brutos/**/.gitkeep
+
+# Produtos geoespaciais gerados durante a preparação
+/dados/extraidos/**/*.gpkg
+/dados/extraidos/**/*.parquet
+/dados/extraidos/**/*.geoparquet
+/dados/tratados/**/*.gpkg
+/dados/tratados/**/*.parquet
+/dados/tratados/**/*.geoparquet
+
+# Arquivos temporários de download e bancos auxiliares
+*.part
+*.crdownload
+*.gpkg-journal
+*.gpkg-wal
+*.gpkg-shm
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
