@@ -7,18 +7,62 @@
       "periodo": "período do dia exatamente como descrito na fonte (madrugada, manhã, tarde, fim da tarde); nenhuma fonte informa a hora exata das paradas.",
       "hora": "sempre null: nenhuma fonte encontrada informa a hora exata.",
       "limite_superior_pela_publicacao": "preenchido só quando a fonte fala do próprio dia ('deste sábado', 'desta terça'): o evento ocorreu ANTES do horário de publicação da nota. É um limite, não a hora do evento.",
-      "bairros_conforme_fonte": "listas copiadas como estão na fonte, na ordem original. Algumas entradas são vilas ou loteamentos, não bairros oficiais; o mapeamento para os 94 bairros oficiais é etapa de limpeza, não foi feito aqui."
+      "bairros_conforme_fonte": "listas copiadas como estão na fonte, na ordem original. Algumas entradas são vilas ou loteamentos, não bairros oficiais; o mapeamento para os 94 bairros oficiais é etapa de limpeza, não foi feito aqui.",
+      "trechos": "citações literais da fonte indicada em 'fonte'; '[...]' marca um corte.",
+      "parada_por_agua": "true quando alguma fonte diz que a estrutura (Ebab, captação ou estação) foi alagada/inundada; false quando não parou; null quando as fontes divergem.",
+      "observacao_calibracao": "interpretação da equipe (não está nas fontes) sobre o uso do evento para estimar o nível do Guaíba que paralisa a ETA."
     },
     "contexto_nivel_guaiba": {
-      "valor_m": 5.22,
-      "trecho": "Com a elevação no nível do Guaíba – que chegou a 5,22 metros -, quatro das seis estações de tratamento do Departamento Municipal de Água e Esgotos (Dmae) estão inoperantes.",
-      "fontes": [
-        "F9"
+      "leituras": [
+        {
+          "valor_m": 5.09,
+          "momento": "2024-05-04T12:00",
+          "trechos": [
+            {
+              "fonte": "F13",
+              "texto": "Cota atual: 5,09 metros"
+            },
+            {
+              "fonte": "F13",
+              "texto": "Informação obtida pela @defesacivilpoa in loco, às 12h, por meio da régua da Secretaria Estadual do Meio Ambiente e Infraestrutura (Sema) e Agência Nacional de Águas (ANA)."
+            },
+            {
+              "fonte": "F13",
+              "texto": "Com a elevação no nível do Guaíba – que chegou a 5,09 metros -, quatro das seis estações de tratamento do Departamento Municipal de Água e Esgotos (Dmae) estão inoperantes."
+            }
+          ],
+          "fontes": [
+            "F13"
+          ]
+        },
+        {
+          "valor_m": 5.22,
+          "momento": null,
+          "trechos": [
+            {
+              "fonte": "F9",
+              "texto": "Com a elevação no nível do Guaíba – que chegou a 5,22 metros -, quatro das seis estações de tratamento do Departamento Municipal de Água e Esgotos (Dmae) estão inoperantes."
+            }
+          ],
+          "nota": "mesma frase da nota da Prefeitura (F13) com outro valor; a reportagem não informa o horário da leitura.",
+          "fontes": [
+            "F9"
+          ]
+        }
       ],
-      "atencao": "A fonte não diz o horário dessa leitura nem que ela corresponde ao momento de parada de alguma ETA. Não usar como nível de parada."
+      "atencao": "Nenhuma leitura é do momento exato de parada de uma ETA. A de 5,09 m (12h de 04/05) é posterior às paradas de Moinhos de Vento, São João e Tristeza, anunciadas até 07:34 do mesmo dia (F2). Para o nível na hora das paradas, usar a série horária da régua (Sema/ANA)."
     },
     "captacao_geral": {
-      "trecho": "A captação da água, realizada pelas Ebabs em cinco pontos no Lago Guaíba e um no rio Jacuí – o último abastece a região das Ilhas.",
+      "trechos": [
+        {
+          "fonte": "F11",
+          "texto": "realizada pelas Ebabs em cinco pontos no Lago Guaíba e um no rio Jacuí – o último abastece a região das Ilhas"
+        },
+        {
+          "fonte": "F11",
+          "texto": "cada ETA possui uma própria Estação de Bombeamento de Água Bruta"
+        }
+      ],
       "fontes": [
         "F11"
       ]
@@ -56,29 +100,57 @@
       {
         "id": "C4",
         "assunto": "Estrutura alagada na ETA Tristeza",
-        "descricao": "F2 atribui a parada ao alagamento da Ebab (estação de bombeamento de água bruta). F11 escreve 'alagamento em sua Ebap' (sigla de estação de bombeamento de água pluvial), possivelmente erro de digitação; não confirmado.",
+        "descricao": "F2 atribui a parada ao alagamento da Ebab (estação de bombeamento de água bruta). F11 escreve 'alagamento em sua Ebap' (sigla de estação de bombeamento de água pluvial). A própria nota do Dmae F12 escreve 'Estação de Bombeamento de Água Bruta (Ebap) Menino Deus', trocando a sigla; é provável que F11 tenha a mesma troca, mas isso não está confirmado.",
         "fontes": [
           "F2",
-          "F11"
+          "F11",
+          "F12"
         ]
       },
       {
         "id": "C5",
         "assunto": "Grafia de bairro",
-        "descricao": "'Mont Serrat' (F1) e 'Mont’Serrat' (F2, F6).",
+        "descricao": "'Mont Serrat' (F1, F11, F12) e 'Mont’Serrat' (F2, F6, F9).",
         "fontes": [
           "F1",
           "F2",
-          "F6"
+          "F6",
+          "F9",
+          "F11",
+          "F12"
         ]
       },
       {
         "id": "C6",
         "assunto": "Causa da parada da ETA São João",
-        "descricao": "F2 atribui a suspensão das três ETAs ao alagamento das Ebabs. F3 diz que a Ebab São João foi 'desligada por risco iminente de choque elétrico'. As duas versões podem ser compatíveis (desligamento preventivo diante da água), mas a fonte específica (F3) fala em desligamento preventivo, não em equipamento alagado.",
+        "descricao": "F2 e F13 atribuem a suspensão ao alagamento. F3 diz que a Ebab São João foi 'desligada por risco iminente de choque elétrico' e F11 repete essa causa. F14 acrescenta que religar era complexo porque 'a estação da CEEE Equatorial da região está inundada'. As versões podem ser compatíveis (desligamento preventivo diante da água), mas nenhuma fonte diz que os equipamentos da Ebab São João ficaram submersos.",
         "fontes": [
           "F2",
-          "F3"
+          "F3",
+          "F11",
+          "F13",
+          "F14"
+        ]
+      },
+      {
+        "id": "C7",
+        "assunto": "Causa da parada da ETA Menino Deus",
+        "descricao": "F12 (Dmae, 06/05/2024 18:19) diz que, desligada a energia da casa de bombas pluvial Ebap 12, a estação de bombeamento de água bruta Menino Deus 'foi totalmente inundada, sendo necessário também o desligamento elétrico'. F4 (Dmae, 07/05/2024) diz apenas que a Ebab 'estava sem energia desde segunda-feira, 6', e F11 fala em 'desligamento da energia nos bairros Menino Deus, Centro e Cidade Baixa'. As versões são compatíveis (inundação seguida de desligamento), mas F4 e F11 omitem a inundação.",
+        "fontes": [
+          "F12",
+          "F4",
+          "F11"
+        ]
+      },
+      {
+        "id": "C8",
+        "assunto": "Número de ilhas atendidas pela ETA Ilhas",
+        "descricao": "F10 diz que a ETA 'abastece as cinco ilhas', sem nomeá-las; F8 cita quatro (Pintada, Pavão, Flores e Marinheiros); F7 e F11 falam no bairro Arquipélago.",
+        "fontes": [
+          "F7",
+          "F8",
+          "F10",
+          "F11"
         ]
       }
     ],
@@ -89,7 +161,7 @@
         "titulo": "Dmae suspende operação do sistema Moinhos de Vento",
         "publicado_em": "2024-05-03T06:13",
         "url": "https://prefeitura.poa.br/dmae/noticias/dmae-suspende-operacao-do-sistema-moinhos-de-vento",
-        "acessado_em": "2026-11-09"
+        "acessado_em": "2026-11-13"
       },
       {
         "id": "F2",
@@ -97,7 +169,7 @@
         "titulo": "Três estações de tratamento de água do Dmae estão paradas devido a alagamentos",
         "publicado_em": "2024-05-04T07:34",
         "url": "https://prefeitura.poa.br/dmae/noticias/tres-estacoes-de-tratamento-de-agua-do-dmae-estao-paradas-devido-alagamentos",
-        "acessado_em": "2026-11-09"
+        "acessado_em": "2026-11-13"
       },
       {
         "id": "F3",
@@ -105,7 +177,7 @@
         "titulo": "Dmae religa Estação São João que abastece a Zona Norte",
         "publicado_em": "2024-05-07T10:24",
         "url": "https://prefeitura.poa.br/dmae/noticias/dmae-religa-estacao-sao-joao-que-abastece-zona-norte",
-        "acessado_em": "2026-11-09"
+        "acessado_em": "2026-11-13"
       },
       {
         "id": "F4",
@@ -113,7 +185,7 @@
         "titulo": "Dmae retoma operação do Sistema Menino Deus",
         "publicado_em": "2024-05-07T18:23",
         "url": "https://prefeitura.poa.br/dmae/noticias/dmae-retoma-operacao-do-sistema-menino-deus",
-        "acessado_em": "2026-11-09"
+        "acessado_em": "2026-11-13"
       },
       {
         "id": "F5",
@@ -121,7 +193,7 @@
         "titulo": "ETA Tristeza retoma operação na Zona Sul",
         "publicado_em": "2024-05-07T20:18",
         "url": "https://www.prefeitura.poa.br/dmae/noticias/eta-tristeza-retoma-operacao-na-zona-sul",
-        "acessado_em": "2026-11-09"
+        "acessado_em": "2026-11-13"
       },
       {
         "id": "F6",
@@ -129,7 +201,7 @@
         "titulo": "Dmae retoma operação da estação de bombeamento Moinhos de Vento",
         "publicado_em": "2024-05-15T14:03",
         "url": "https://prefeitura.poa.br/dmae/noticias/dmae-retoma-operacao-da-estacao-de-bombeamento-moinhos-de-vento",
-        "acessado_em": "2026-11-09"
+        "acessado_em": "2026-11-13"
       },
       {
         "id": "F7",
@@ -137,7 +209,7 @@
         "titulo": "Dmae inicia trabalhos de reconstrução na estação de tratamento de água das Ilhas",
         "publicado_em": "2024-06-06T15:04",
         "url": "https://prefeitura.poa.br/dmae/noticias/dmae-inicia-trabalhos-de-reconstrucao-na-estacao-de-tratamento-de-agua-das-ilhas",
-        "acessado_em": "2026-11-09"
+        "acessado_em": "2026-11-13"
       },
       {
         "id": "F8",
@@ -145,7 +217,7 @@
         "titulo": "Dmae retoma operação da estação de água das Ilhas",
         "publicado_em": "2024-06-08T15:29",
         "url": "https://www.prefeitura.poa.br/dmae/noticias/dmae-retoma-operacao-da-estacao-de-agua-das-ilhas",
-        "acessado_em": "2026-11-09"
+        "acessado_em": "2026-11-13"
       },
       {
         "id": "F9",
@@ -153,7 +225,7 @@
         "titulo": "Três estações de tratamento de água do Dmae estão paradas devido a alagamentos",
         "publicado_em": "2024-05-04",
         "url": "https://www.osul.com.br/tres-estacoes-de-tratamento-de-agua-do-dmae-estao-paradas-devido-a-alagamentos/",
-        "acessado_em": "2026-11-09"
+        "acessado_em": "2026-11-13"
       },
       {
         "id": "F10",
@@ -161,7 +233,7 @@
         "titulo": "Maior parte de Porto Alegre está sem abastecimento de água; são 4 ETAs fora de operação",
         "publicado_em": "2024-05-05T16:37",
         "url": "https://www.jornaldocomercio.com/geral/2024/05/1153238-com-estacoes-fora-de-operacao-maior-parte-de-porto-alegre-esta-sem-abastecimento-de-agua.html",
-        "acessado_em": "2026-11-09"
+        "acessado_em": "2026-11-13"
       },
       {
         "id": "F11",
@@ -169,9 +241,44 @@
         "titulo": "Entenda como funciona o sistema de abastecimento de água em Porto Alegre",
         "publicado_em": "2024-05-10T19:18",
         "url": "https://www.jornaldocomercio.com/geral/2024/05/1154223-entenda-como-funciona-o-sistema-de-abastecimento-de-agua-em-porto-alegre.html",
-        "acessado_em": "2026-11-09"
+        "acessado_em": "2026-11-13"
+      },
+      {
+        "id": "F12",
+        "veiculo": "Dmae / Prefeitura de Porto Alegre",
+        "titulo": "Estação de Tratamento de Água Belém Novo é a única em operação",
+        "publicado_em": "2024-05-06T18:19",
+        "url": "https://prefeitura.poa.br/dmae/noticias/estacao-de-tratamento-de-agua-belem-novo-e-unica-em-operacao",
+        "acessado_em": "2026-11-13"
+      },
+      {
+        "id": "F13",
+        "veiculo": "Gabinete do Prefeito / Prefeitura de Porto Alegre",
+        "titulo": "Prefeitura pede que a população racione água",
+        "publicado_em": "2024-05-04T12:54",
+        "url": "https://prefeitura.poa.br/gp/noticias/prefeitura-pede-que-populacao-racione-agua",
+        "acessado_em": "2026-11-13"
+      },
+      {
+        "id": "F14",
+        "veiculo": "Gabinete do Prefeito / Prefeitura de Porto Alegre",
+        "titulo": "Melo reforça apelo para que população economize água",
+        "publicado_em": "2024-05-06T09:01",
+        "url": "https://prefeitura.poa.br/gp/noticias/melo-reforca-apelo-para-que-populacao-economize-agua",
+        "acessado_em": "2026-11-13"
+      },
+      {
+        "id": "F15",
+        "veiculo": "Dmae / Prefeitura de Porto Alegre",
+        "titulo": "Hospitais e casas de repouso são abastecidos por 14 caminhões-pipa",
+        "publicado_em": "2024-05-08T10:48",
+        "url": "https://prefeitura.poa.br/dmae/noticias/hospitais-e-casas-de-repouso-sao-abastecidos-por-14-caminhoes-pipa",
+        "acessado_em": "2026-11-13",
+        "nota": "a nota escreve 'Na quarta-feira, 7'; 7 de maio de 2024 foi terça-feira (como em F3, F4 e F5)."
       }
-    ]
+    ],
+    "revisado_em": "2026-11-13",
+    "revisao": "Revisão de 2026-11-13: as páginas das fontes foram baixadas de novo e cada citação, lista de bairros, endereço, título e data de publicação foi conferida automaticamente contra o texto original. Foram acrescentadas as fontes F12 a F15 e corrigida a causa da parada da ETA Menino Deus (a Ebab foi inundada; antes constava só falta de energia)."
   },
   "etas": [
     {
@@ -190,17 +297,34 @@
         "ebab_endereco": "Avenida Voluntários da Pátria, 2.100",
         "fontes": [
           "F6"
+        ],
+        "trechos": [
+          {
+            "fonte": "F6",
+            "texto": "A estação, que fica na avenida Voluntários da Pátria 2.100, é responsável por captar a água do Lago Guaíba e bombear até a Estação de Tratamento de Água (ETA) Moinhos de Vento, localizada na rua 24 de Outubro, 200."
+          }
         ]
       },
       "populacao_atendida": {
         "valor": "cerca de 150 mil pessoas",
-        "trecho": "Cerca de 150 mil pessoas são abastecidos por esse sistema.",
+        "trechos": [
+          {
+            "fonte": "F6",
+            "texto": "Cerca de 150 mil pessoas são abastecidos por esse sistema."
+          }
+        ],
         "fontes": [
           "F6"
         ]
       },
       "observacao_atendimento": {
         "valor": "responsável pelo abastecimento de sete hospitais",
+        "trechos": [
+          {
+            "fonte": "F6",
+            "texto": "A estação Moinhos é responsável pelo abastecimento de sete hospitais."
+          }
+        ],
         "fontes": [
           "F6"
         ]
@@ -234,26 +358,45 @@
         "fontes": [
           "F1",
           "F2",
-          "F6"
-        ]
+          "F6",
+          "F9",
+          "F11",
+          "F12"
+        ],
+        "nota": "grafia 'Mont’Serrat' conforme F2, F6 e F9; F1, F11 e F12 escrevem 'Mont Serrat' (ver C5)."
       },
       "enchente_2024": {
         "parou": true,
         "causa": {
-          "valor": "inundação do Guaíba / alagamento da Ebab",
+          "valor": "inundação do Guaíba; Ebab inundada (painéis eletrônicos molhados); ponto de captação danificado",
           "trechos": [
-            "suspendeu a operação do Sistema de Abastecimento de Água (SAA) Moinhos de Vento na madrugada desta sexta-feira, 3, em razão da inundação do Guaíba",
-            "A Estação de Bombeamento de Água Bruta (Ebab) que alimenta o complexo foi inundada"
+            {
+              "fonte": "F1",
+              "texto": "suspendeu a operação do Sistema de Abastecimento de Água (SAA) Moinhos de Vento na madrugada desta sexta-feira, 3, em razão da inundação do Guaíba"
+            },
+            {
+              "fonte": "F1",
+              "texto": "Com o nível do Guaíba subindo rapidamente, será necessário parar com a captação e bombeamento da água bruta para evitar de colapsar as bombas"
+            },
+            {
+              "fonte": "F11",
+              "texto": "A Estação de Bombeamento de Água Bruta (Ebab) que alimenta o complexo foi inundada, molhando os painéis eletrônicos que existem no local."
+            },
+            {
+              "fonte": "F15",
+              "texto": "retomar o sistema Moinhos de Vento, cujo ponto de captação foi danificado pela enchente"
+            }
           ],
           "fontes": [
             "F1",
-            "F11"
+            "F11",
+            "F15"
           ]
         },
         "parada_por_agua": true,
         "eventos": [
           {
-            "tipo": "suspensao_captacao",
+            "tipo": "suspensao_saa",
             "data": "2024-05-03",
             "periodo": "madrugada",
             "hora": null,
@@ -261,7 +404,8 @@
             "fontes": [
               "F1"
             ],
-            "ver_contradicao": "C1"
+            "ver_contradicao": "C1",
+            "nota_tipo": "F1 fala em suspensão da operação do Sistema de Abastecimento de Água (SAA); a fala do diretor na mesma nota está no futuro ('será necessário parar')."
           },
           {
             "tipo": "suspensao_eta",
@@ -271,9 +415,20 @@
             "limite_superior_pela_publicacao": "2024-05-04T07:34",
             "fontes": [
               "F2",
-              "F6"
+              "F6",
+              "F13"
             ],
-            "ver_contradicao": "C1"
+            "ver_contradicao": "C1",
+            "trechos": [
+              {
+                "fonte": "F2",
+                "texto": "foi necessário suspender os operações das Estações de Tratamento de Água (Etas) Moinhos de Vento, São João e Tristeza, na manhã deste sábado, 4."
+              },
+              {
+                "fonte": "F6",
+                "texto": "O bombeamento estava fora de operação desde o sábado, 4."
+              }
+            ]
           },
           {
             "tipo": "retomada_ebab",
@@ -285,9 +440,16 @@
             "fontes": [
               "F6"
             ],
-            "ver_contradicao": "C3"
+            "ver_contradicao": "C3",
+            "trechos": [
+              {
+                "fonte": "F6",
+                "texto": "conseguiu retomar a operação da Estação de Bombeamento de Água Bruta (Ebab) Moinhos de Vento, nesta quarta-feira, 15."
+              }
+            ]
           }
-        ]
+        ],
+        "observacao_calibracao": "parada ligada diretamente à subida do Guaíba; a data tem duas versões (ver C1)."
       }
     },
     {
@@ -307,7 +469,13 @@
           "F3",
           "F11"
         ],
-        "corpo_hidrico_nota": "deduzido de F11: cada ETA tem sua Ebab; captação em cinco pontos no Lago Guaíba e um no rio Jacuí, este último das Ilhas"
+        "corpo_hidrico_nota": "deduzido de F11: cada ETA tem sua Ebab; captação em cinco pontos no Lago Guaíba e um no rio Jacuí, este último das Ilhas",
+        "trechos": [
+          {
+            "fonte": "F3",
+            "texto": "a Estação de Bombeamento de Água Bruta (Ebab) São João, localizada na avenida Voluntários da Pátria"
+          }
+        ]
       },
       "populacao_atendida": {
         "valor": null,
@@ -355,21 +523,39 @@
         "atendimento": "a fonte não diz se é total ou parcial em cada bairro",
         "fontes": [
           "F2",
-          "F3"
+          "F3",
+          "F9",
+          "F11",
+          "F12"
         ]
       },
       "enchente_2024": {
         "parou": true,
         "causa": {
-          "valor": "Ebab desligada por risco iminente de choque elétrico",
+          "valor": "Ebab desligada por risco iminente de choque elétrico (F3, F11); F2 e F13 falam em alagamento",
           "trechos": [
-            "Desligada por risco iminente de choque elétrico, a Estação de Bombeamento de Água Bruta (Ebab) São João, localizada na avenida Voluntários da Pátria, parou de operar no sábado, 4."
+            {
+              "fonte": "F3",
+              "texto": "Desligada por risco iminente de choque elétrico, a Estação de Bombeamento de Água Bruta (Ebab) São João, localizada na avenida Voluntários da Pátria, parou de operar no sábado, 4."
+            },
+            {
+              "fonte": "F11",
+              "texto": "Por risco de choque elétrico, a Ebab responsável por abastecê-la havia sido desligada no sábado (4)"
+            },
+            {
+              "fonte": "F14",
+              "texto": "a operação é complexa, pois a estação da CEEE Equatorial da região está inundada"
+            }
           ],
           "fontes": [
-            "F3"
+            "F3",
+            "F11",
+            "F14",
+            "F2",
+            "F13"
           ]
         },
-        "parada_por_agua": "preventiva (risco de choque elétrico); ver C6",
+        "parada_por_agua": null,
         "eventos": [
           {
             "tipo": "suspensao_eta",
@@ -379,7 +565,9 @@
             "limite_superior_pela_publicacao": "2024-05-04T07:34",
             "fontes": [
               "F2",
-              "F3"
+              "F3",
+              "F11",
+              "F13"
             ],
             "ver_contradicao": "C6"
           },
@@ -391,10 +579,18 @@
             "limite_superior_pela_publicacao": "2024-05-07T10:24",
             "detalhe": "vazão inicial de 1.000 litros por segundo",
             "fontes": [
-              "F3"
+              "F3",
+              "F11"
+            ],
+            "trechos": [
+              {
+                "fonte": "F3",
+                "texto": "conseguiu religar a Estação de Tratamento de Água (ETA) São João, na manhã desta terça-feira, 7. A vazão inicial será de 1.000 litros por segundo."
+              }
             ]
           }
-        ]
+        ],
+        "observacao_calibracao": "desligamento preventivo segundo a nota específica (F3); as fontes divergem (ver C6). Não usar como ponto seguro de calibração."
       }
     },
     {
@@ -414,7 +610,13 @@
           "F4",
           "F11"
         ],
-        "corpo_hidrico_nota": "deduzido de F11: cada ETA tem sua Ebab; captação em cinco pontos no Lago Guaíba e um no rio Jacuí, este último das Ilhas"
+        "corpo_hidrico_nota": "deduzido de F11: cada ETA tem sua Ebab; captação em cinco pontos no Lago Guaíba e um no rio Jacuí, este último das Ilhas",
+        "trechos": [
+          {
+            "fonte": "F4",
+            "texto": "A Estação de Bombeamento de Água Bruta (Ebab) Menino Deus, responsável por captar e bombear a água até a estação de tratamento"
+          }
+        ]
       },
       "populacao_atendida": {
         "valor": null,
@@ -465,33 +667,61 @@
         "nota": "espaços sobrando antes de vírgulas na fonte foram removidos (ex.: 'Petrópolis ,')",
         "fontes": [
           "F4",
-          "F11"
+          "F11",
+          "F12"
         ]
       },
       "enchente_2024": {
         "parou": true,
         "causa": {
-          "valor": "falta de energia elétrica na Ebab",
+          "valor": "Ebab totalmente inundada depois do desligamento da energia da casa de bombas pluvial Ebap 12 (Parque Marinha), seguida de desligamento elétrico da própria Ebab",
           "trechos": [
-            "A Estação de Bombeamento de Água Bruta (Ebab) Menino Deus [...] estava sem energia desde segunda-feira, 6"
+            {
+              "fonte": "F12",
+              "texto": "Com a inundação, foi necessário fazer o desligamento da energia elétrica da Estação de Bombeamento de Água Pluvial (Ebap) 12, no Parque Marinha. Sem o bombeamento da água para o lago, a Estação de Bombeamento de Água Bruta (Ebap) Menino Deus foi totalmente inundada, sendo necessário também o desligamento elétrico."
+            },
+            {
+              "fonte": "F4",
+              "texto": "A Estação de Bombeamento de Água Bruta (Ebab) Menino Deus, responsável por captar e bombear a água até a estação de tratamento, estava sem energia desde segunda-feira, 6."
+            },
+            {
+              "fonte": "F11",
+              "texto": "terem sido suspensas em razão do desligamento da energia nos bairros Menino Deus, Centro e Cidade Baixa"
+            }
           ],
           "fontes": [
+            "F12",
             "F4",
             "F11"
-          ]
+          ],
+          "ver_contradicao": "C7"
         },
-        "parada_por_agua": false,
+        "parada_por_agua": true,
         "eventos": [
           {
-            "tipo": "suspensao_ebab",
+            "tipo": "suspensao_eta",
             "data": "2024-05-06",
             "periodo": null,
             "hora": null,
-            "limite_superior_pela_publicacao": null,
+            "limite_superior_pela_publicacao": "2024-05-06T18:19",
+            "detalhe": "estava operando no final da tarde de domingo, 05/05 (F14); já não operava no final da tarde de segunda, 06/05 (F12)",
+            "trechos": [
+              {
+                "fonte": "F12",
+                "texto": "informa que a Estação de Tratamento de Água (ETA) Menino Deus não está operando. No final da tarde desta segunda-feira, 6, apenas a Estação Belém Novo segue em funcionamento, com a capacidade reduzida."
+              },
+              {
+                "fonte": "F14",
+                "texto": "apenas duas estão operando (Menino Deus e Belém Novo)"
+              }
+            ],
             "fontes": [
+              "F12",
               "F4",
-              "F11"
-            ]
+              "F11",
+              "F14"
+            ],
+            "ver_contradicao": "C7"
           },
           {
             "tipo": "retomada_eta",
@@ -499,11 +729,19 @@
             "periodo": "fim da tarde",
             "hora": null,
             "limite_superior_pela_publicacao": "2024-05-07T18:23",
+            "trechos": [
+              {
+                "fonte": "F4",
+                "texto": "O Sistema de Abastecimento de Água (SAA) Menino Deus foi religado no fim da tarde de terça-feira, 7"
+              }
+            ],
             "fontes": [
-              "F4"
+              "F4",
+              "F11"
             ]
           }
-        ]
+        ],
+        "observacao_calibracao": "a Ebab foi inundada, mas por alagamento interno depois que a casa de bombas pluvial (Ebap 12) foi desligada, e não diretamente pelo nível do Guaíba; a ETA ainda operava no final da tarde de 05/05 (F14), mais de um dia depois de o Guaíba marcar 5,09 m (F13). Não usar como limiar direto de nível."
       }
     },
     {
@@ -542,23 +780,45 @@
           "Jardim Verde Ipanema"
         ],
         "quantidade": 10,
-        "atendimento": "parcial: 'Ela atende partes dos bairros [...]'",
+        "atendimento": "parcial",
         "fontes": [
           "F2",
-          "F5"
+          "F5",
+          "F9",
+          "F11",
+          "F12"
+        ],
+        "trechos": [
+          {
+            "fonte": "F5",
+            "texto": "Ela atende partes dos bairros Ipanema, Pedra Redonda"
+          },
+          {
+            "fonte": "F12",
+            "texto": "Afeta partes dos bairros e localidades:"
+          }
         ]
       },
       "enchente_2024": {
         "parou": true,
         "causa": {
-          "valor": "alagamento da estação de bombeamento",
+          "valor": "alagamento da estação de bombeamento de água bruta",
           "trechos": [
-            "A suspensão dos trabalhos se dá em razão do alagamento das estações de bombeamento de água bruta (Ebabs)"
+            {
+              "fonte": "F2",
+              "texto": "A suspensão dos trabalhos se dá em razão do alagamento das estações de bombeamento de água bruta (Ebabs)"
+            },
+            {
+              "fonte": "F11",
+              "texto": "depois de ser desligada graças a um alagamento em sua Ebap"
+            }
           ],
           "fontes": [
             "F2",
-            "F11"
-          ]
+            "F11",
+            "F13"
+          ],
+          "ver_contradicao": "C4"
         },
         "parada_por_agua": true,
         "eventos": [
@@ -569,7 +829,8 @@
             "hora": null,
             "limite_superior_pela_publicacao": "2024-05-04T07:34",
             "fontes": [
-              "F2"
+              "F2",
+              "F13"
             ],
             "ver_contradicao": "C4"
           },
@@ -580,10 +841,18 @@
             "hora": null,
             "limite_superior_pela_publicacao": "2024-05-07T20:18",
             "fontes": [
-              "F5"
+              "F5",
+              "F11"
+            ],
+            "trechos": [
+              {
+                "fonte": "F5",
+                "texto": "No final da tarde desta terça-feira, 7, o Departamento Municipal de Água e Esgotos (Dmae) confirmou a retomada da Estação de Tratamento de Água (ETA) Tristeza."
+              }
             ]
           }
-        ]
+        ],
+        "observacao_calibracao": "parada ligada ao alagamento da estação de bombeamento na manhã de 04/05; candidato a ponto de calibração."
       }
     },
     {
@@ -640,13 +909,34 @@
           "fontes": []
         },
         "parada_por_agua": false,
-        "trecho": "essa Estação foi a única que não precisou ser desativada em nenhum momento desde o início da enchente. Atualmente, porém, segue com capacidade reduzida.",
         "eventos": [],
         "fontes": [
           "F11",
+          "F12",
           "F3",
-          "F4"
-        ]
+          "F4",
+          "F14"
+        ],
+        "trechos": [
+          {
+            "fonte": "F11",
+            "texto": "essa Estação foi a única que não precisou ser desativada em nenhum momento desde o início da enchente"
+          },
+          {
+            "fonte": "F12",
+            "texto": "apenas a Estação Belém Novo segue em funcionamento, com a capacidade reduzida"
+          },
+          {
+            "fonte": "F3",
+            "texto": "Também segue operando o Sistema Belém Novo, no Extremo-Sul da Capital."
+          },
+          {
+            "fonte": "F4",
+            "texto": "Estão em operação também os sistemas Belém Novo e São João."
+          }
+        ],
+        "nota": "'não parou' vale até 10/05/2024, data de F11; operou com capacidade reduzida.",
+        "observacao_calibracao": "não parou durante a enchente (até 10/05/2024, data de F11); só indica que o limiar, se existir, é maior que o nível atingido no período."
       }
     },
     {
@@ -665,14 +955,30 @@
         "corpo_hidrico": "Rio Jacuí",
         "ebab_nome": null,
         "ebab_endereco": null,
-        "detalhe": "captação por motores flutuantes; 'Os motores flutuantes da captação e a estrutura de metal onde ficam localizados foram arrastados com a água e deslocados.'",
+        "detalhe": "captação por motores flutuantes",
         "fontes": [
           "F11",
           "F7"
+        ],
+        "trechos": [
+          {
+            "fonte": "F7",
+            "texto": "Os motores flutuantes da captação e a estrutura de metal onde ficam localizados foram arrastados com a água e deslocados."
+          },
+          {
+            "fonte": "F11",
+            "texto": "um no rio Jacuí – o último abastece a região das Ilhas"
+          }
         ]
       },
       "populacao_atendida": {
         "valor": "cerca de 9 mil pessoas",
+        "trechos": [
+          {
+            "fonte": "F7",
+            "texto": "A estação é responsável pelo abastecimento de todo o bairro Arquipélago e atende cerca de 9 mil pessoas."
+          }
+        ],
         "fontes": [
           "F7"
         ]
@@ -682,7 +988,7 @@
           "Arquipélago"
         ],
         "quantidade": 1,
-        "atendimento": "total: 'responsável pelo abastecimento de todo o bairro Arquipélago'",
+        "atendimento": "total",
         "ilhas_citadas": [
           "Pintada",
           "Pavão",
@@ -692,33 +998,75 @@
         "fontes": [
           "F7",
           "F8",
-          "F11"
-        ]
+          "F11",
+          "F12"
+        ],
+        "trechos": [
+          {
+            "fonte": "F7",
+            "texto": "responsável pelo abastecimento de todo o bairro Arquipélago"
+          },
+          {
+            "fonte": "F8",
+            "texto": "abastece as ilhas da Pintada, do Pavão, das Flores e dos Marinheiros"
+          },
+          {
+            "fonte": "F12",
+            "texto": "ETA Ilhas - Afeta todo o arquipélago"
+          }
+        ],
+        "nota": "F10 fala em 'cinco ilhas' sem nomeá-las (ver C8)."
       },
       "enchente_2024": {
         "parou": true,
         "causa": {
-          "valor": "estação inundada; estrutura da captação arrastada",
+          "valor": "estação completamente alagada; estrutura da captação arrastada",
           "trechos": [
-            "A estação está desativada desde o dia 4 de maio, em razão da enchente que inundou o local."
+            {
+              "fonte": "F7",
+              "texto": "A estação está desativada desde o dia 4 de maio, em razão da enchente que inundou o local."
+            },
+            {
+              "fonte": "F8",
+              "texto": "Desligada no início de maio porque ficou completamente alagada na enchente"
+            },
+            {
+              "fonte": "F13",
+              "texto": "a situação mais grave é na Ilha da Pintada, onde parte da estrutura da estação foi arrastada e precisará ser reconstruída"
+            }
           ],
           "fontes": [
             "F7",
-            "F8"
+            "F8",
+            "F13"
           ]
         },
         "parada_por_agua": true,
-        "atencao": "a captação é no rio Jacuí, não no Lago Guaíba: o nível medido no Cais Mauá não representa diretamente o nível nesse ponto",
         "eventos": [
           {
             "tipo": "suspensao_eta",
             "data": "2024-05-04",
             "periodo": null,
             "hora": null,
-            "limite_superior_pela_publicacao": null,
+            "limite_superior_pela_publicacao": "2024-05-04T12:54",
             "fontes": [
               "F7",
-              "F10"
+              "F10",
+              "F13"
+            ],
+            "trechos": [
+              {
+                "fonte": "F7",
+                "texto": "A estação está desativada desde o dia 4 de maio"
+              },
+              {
+                "fonte": "F13",
+                "texto": "As Estações de Tratamento de Água (Etas) Ilhas, Moinhos de Vento, São João e Tristeza foram desligadas devido aos alagamentos."
+              },
+              {
+                "fonte": "F10",
+                "texto": "estão fora operação desde sábado"
+              }
             ]
           },
           {
@@ -730,9 +1078,20 @@
             "detalhe": "a Ebat Ilhas (distribuição de água tratada) foi religada à tarde; normalização prevista para a noite de 08/06 ou madrugada de 09/06",
             "fontes": [
               "F8"
+            ],
+            "trechos": [
+              {
+                "fonte": "F8",
+                "texto": "retomou a produção na Estação de Tratamento de Água (ETA) Ilha da Pintada na manhã deste sábado, 8."
+              },
+              {
+                "fonte": "F8",
+                "texto": "A Estação de Bombeamento de Água Tratada (Ebat) Ilhas, que faz a distribuição da água, foi religada à tarde"
+              }
             ]
           }
-        ]
+        ],
+        "observacao_calibracao": "a captação é no rio Jacuí, não no Lago Guaíba: o nível medido no Cais Mauá não representa diretamente o nível nesse ponto"
       }
     }
   ]
