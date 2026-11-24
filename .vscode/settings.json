@@ -1,0 +1,7 @@
+{
+    "python.defaultInterpreterPath": "/home/jo-o-antonio/Downloads/projeto_cpa/.venv/bin/python",
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "jupyter.kernels.excludePythonEnvironments": [
+        "/usr/bin/python3"
+    ]
+}
