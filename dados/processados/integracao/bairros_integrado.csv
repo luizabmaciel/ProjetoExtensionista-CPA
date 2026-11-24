@@ -1,0 +1,95 @@
+chave,bairro,pessoas,domicilios,pct_residencial,inct_total_predios,inct_nivel_primeiro_alagamento_m,inct_pct_pop_afetada_5m,escolas,saude,etas,eta_parou_por_agua_2024
+MEDIANEIRA,Medianeira,8749,4605,90.06,4047,,0.0,5,0,ETA Menino Deus,sim
+PRAIADEBELAS,Praia de Belas,1522,1241,85.87,290,3.0,100.0,0,0,ETA Menino Deus; ETA Moinhos de Vento,sim
+CIDADEBAIXA,Cidade Baixa,13014,10209,90.33,2339,3.3,44.936,5,1,ETA Menino Deus; ETA Moinhos de Vento,sim
+MENINODEUS,Menino Deus,27961,17613,92.82,5522,3.3,53.657,8,2,ETA Menino Deus; ETA Moinhos de Vento,sim
+FARROUPILHA,Farroupilha,774,519,82.25,227,7.2,0.0,7,6,ETA Moinhos de Vento,sim
+SANTACECILIA,Santa Cecília,4640,3064,88.59,995,5.7,0.0,4,5,ETA Moinhos de Vento,sim
+SANTANA,Santana,17794,12129,90.23,3635,5.7,0.0,8,7,ETA Menino Deus; ETA Moinhos de Vento,sim
+AZENHA,Azenha,12064,8070,85.95,3317,4.3,8.985,8,3,ETA Menino Deus; ETA Moinhos de Vento,sim
+SANTATEREZA,Santa Tereza,31358,13732,91.9,15906,3.2,0.679,13,2,ETA Menino Deus,sim
+NONOAI,Nonoai,20776,10125,93.67,9053,,0.0,5,1,ETA Menino Deus,sim
+TERESOPOLIS,Teresópolis,13072,6790,93.44,5634,,0.0,7,2,ETA Menino Deus,sim
+GLORIA,Glória,15248,7435,90.26,8293,,0.0,8,2,,sem ETA na lista
+CELAPARICIOBORGES,Coronel Aparício Borges,18966,6633,92.27,7850,,0.0,5,0,ETA Menino Deus,sim
+SANTOANTONIO,Santo Antônio,13105,7659,95.18,3498,,0.0,7,1,ETA Menino Deus,sim
+PARTENON,Partenon,43587,22970,91.86,17605,7.9,0.0,15,3,ETA Menino Deus; ETA Moinhos de Vento,sim
+VILAJOAOPESSOA,Vila João Pessoa,10431,4610,87.83,5218,,0.0,6,3,ETA Menino Deus,sim
+JARDIMBOTANICO,Jardim Botânico,11349,6905,93.15,3312,8.5,0.0,1,2,ETA Menino Deus; ETA Moinhos de Vento,sim
+PETROPOLIS,Petrópolis,37613,22781,93.99,6782,7.1,0.0,6,2,ETA Menino Deus; ETA Moinhos de Vento,sim
+BOMJESUS,Bom Jesus,24589,10453,89.86,10776,,0.0,9,7,,sem ETA na lista
+CAVALHADA,Cavalhada,25209,12898,91.25,9111,6.2,0.0,9,2,ETA Menino Deus,sim
+CAMAQUA,Camaquã,17935,8791,92.21,7897,8.3,0.0,4,1,ETA Menino Deus,sim
+CRISTAL,Cristal,24851,12367,93.27,10229,3.0,9.014,8,0,ETA Menino Deus,sim
+VILAASSUNCAO,Vila Assunção,3974,1781,91.85,3086,3.0,12.909,1,1,ETA Menino Deus,sim
+TRISTEZA,Tristeza,17201,9235,91.97,7884,3.0,3.628,6,2,ETA Menino Deus,sim
+VILACONCEICAO,Vila Conceição,969,498,92.29,777,3.0,2.27,0,0,ETA Menino Deus,sim
+PEDRAREDONDA,Pedra Redonda,570,234,88.69,447,3.0,9.649,1,0,ETA Tristeza,sim
+IPANEMA,Ipanema,13403,6300,89.95,8537,3.0,6.103,7,1,ETA Belém Novo; ETA Tristeza,sim
+ESPIRITOSANTO,Espírito Santo,4953,2318,90.14,3342,3.0,1.433,1,0,ETA Belém Novo; ETA Tristeza,sim
+GUARUJA,Guarujá,6145,2694,93.86,2912,3.0,26.574,1,0,ETA Tristeza,sim
+VILANOVA,Vila Nova,32217,15580,92.18,11900,,0.0,6,1,ETA Menino Deus,sim
+ARQUIPELAGO,Arquipélago,6411,2853,87.93,4688,3.0,99.938,7,2,ETA Ilhas,sim
+CASCATA,Cascata,9234,4417,93.46,4994,,0.0,2,0,ETA Belém Novo,não
+AGRONOMIA,Agronomia,2677,1184,89.13,1771,,0.0,4,0,ETA Belém Novo; ETA Menino Deus,sim
+CENTROHISTORICO,Centro Histórico,30569,25684,83.83,4312,3.0,7.259,12,12,ETA Menino Deus; ETA Moinhos de Vento,sim
+BELEMVELHO,Belém Velho,10893,5700,90.48,5887,,0.0,6,3,ETA Belém Novo; ETA Menino Deus,sim
+BOMFIM,Bom Fim,10160,7539,92.08,1295,,0.0,5,5,ETA Moinhos de Vento,sim
+INDEPENDENCIA,Independência,6885,5089,89.81,980,5.9,0.0,1,5,ETA Moinhos de Vento,sim
+FLORESTA,Floresta,8798,5894,74.87,3731,3.0,62.503,8,4,ETA Moinhos de Vento,sim
+MOINHOSDEVENTO,Moinhos de Vento,9995,6904,87.01,2390,6.1,0.0,4,5,ETA Moinhos de Vento,sim
+RIOBRANCO,Rio Branco,15710,9590,89.54,3496,,0.0,2,8,ETA Moinhos de Vento,sim
+BELAVISTA,Bela Vista,11819,6289,96.14,1636,,0.0,1,1,ETA Moinhos de Vento,sim
+MONTSERRAT,Mont'Serrat,10357,6444,94.43,1838,,0.0,2,0,ETA Moinhos de Vento,sim
+AUXILIADORA,Auxiliadora,8909,5693,89.09,1995,9.9,0.0,2,2,ETA Moinhos de Vento; ETA São João,sim
+SAOJOAO,São João,10621,6435,81.82,3212,3.4,33.782,6,0,ETA Moinhos de Vento; ETA São João,sim
+SAOGERALDO,São Geraldo,6948,4402,62.5,3457,3.0,87.824,4,0,ETA São João,não confirmado
+NAVEGANTES,Navegantes,3315,1970,51.68,3232,3.0,100.0,3,1,ETA São João,não confirmado
+HIGIENOPOLIS,Higienópolis,10284,6001,93.5,2134,,0.0,8,0,ETA São João,não confirmado
+PASSODAAREIA,Passo D'Areia,22530,13110,90.8,5778,6.5,0.0,7,1,ETA São João,não confirmado
+CRISTOREDENTOR,Cristo Redentor,15144,8853,91.11,3243,10.0,0.0,7,6,ETA São João,não confirmado
+JARDIMSAOPEDRO,Jardim São Pedro,3320,1789,85.88,1467,3.9,1.295,1,0,ETA São João,não confirmado
+JARDIMLINDOIA,Jardim Lindóia,7587,4033,93.94,1701,7.2,0.0,1,0,ETA São João,não confirmado
+ANCHIETA,Anchieta,791,346,38.42,589,3.0,100.0,2,0,ETA São João,não confirmado
+BOAVISTA,Boa Vista,9254,5145,93.62,1875,,0.0,6,0,ETA São João,não confirmado
+VILAIPIRANGA,Vila Ipiranga,18041,10411,93.15,4147,,0.0,8,2,ETA São João,não confirmado
+TRESFIGUEIRAS,Três Figueiras,4016,1989,84.42,1904,,0.0,2,2,ETA Moinhos de Vento; ETA São João,sim
+CHACARADASPEDRAS,Chácara das Pedras,5639,2857,86.53,2804,,0.0,3,0,ETA São João,não confirmado
+VILAJARDIM,Vila Jardim,11411,5802,87.88,5331,,0.0,4,1,,sem ETA na lista
+SARANDI,Sarandi,51539,24199,86.45,21680,3.0,40.627,14,4,ETA São João,não confirmado
+SANTAMARIAGORETTI,Santa Maria Goretti,3035,1796,71.59,1794,3.2,27.018,4,0,,sem ETA na lista
+RUBEMBERTA,Rubem Berta,27930,14164,91.99,6565,6.3,0.0,7,1,ETA São João,não confirmado
+SAOSEBASTIAO,São Sebastião,7514,4117,90.2,2013,6.9,0.0,1,3,ETA São João,não confirmado
+HUMAITA,Humaitá,12744,6382,91.61,2087,3.0,100.0,6,0,ETA São João,não confirmado
+FARRAPOS,Farrapos,17591,8061,91.53,5510,3.0,100.0,3,0,ETA São João,não confirmado
+JARDIMCARVALHO,Jardim Carvalho,23405,11118,94.08,9118,,0.0,6,4,ETA Menino Deus,sim
+JARDIMDOSALSO,Jardim do Salso,6576,3647,95.74,1157,,0.0,3,0,ETA Menino Deus,sim
+RESTINGA,Restinga,62448,26656,90.63,20540,,0.0,14,2,ETA Belém Novo,não
+PONTAGROSSA,Ponta Grossa,8939,4186,89.9,5429,3.0,46.952,2,0,,sem ETA na lista
+HIPICA,Hípica,28643,12345,91.49,11178,3.4,1.896,4,2,ETA Belém Novo,não
+BELEMNOVO,Belém Novo,9851,4458,89.69,6012,3.0,25.612,4,0,ETA Belém Novo,não
+LAMI,Lami,6677,3156,87.99,3837,3.0,45.559,2,0,,sem ETA na lista
+SERRARIA,Serraria,4385,1828,93.91,2932,3.0,86.796,1,0,ETA Tristeza,sim
+LAGEADO,Lageado,5676,2716,85.84,3637,5.0,0.088,0,0,ETA Belém Novo,não
+LOMBADOPINHEIRO,Lomba do Pinheiro,59200,25581,91.45,28074,,0.0,9,4,ETA Belém Novo,não
+MARIOQUINTANA,Mário Quintana,44068,18152,90.68,14691,,0.0,7,1,ETA São João,não confirmado
+JARDIMISABEL,Jardim Isabel,2592,1125,94.89,1488,6.2,0.0,3,0,ETA Tristeza,sim
+ABERTADOSMORROS,Aberta dos Morros,9854,4223,91.25,4696,3.4,4.283,3,0,ETA Belém Novo,não
+BOAVISTADOSUL,Boa Vista do Sul,2703,1349,89.82,2450,3.0,25.231,2,0,ETA Belém Novo,não
+CAMPONOVO,Campo Novo,8743,4070,93.2,4043,,0.0,2,1,ETA Belém Novo,não
+CHAPEUDOSOL,Chapéu do Sol,5547,2392,92.25,1798,5.0,0.108,1,0,ETA Belém Novo,não
+COSTAESILVA,Costa e Silva,13585,6040,93.02,5961,,0.0,1,0,ETA São João,não confirmado
+EXTREMA,Extrema,2360,1240,88.18,2351,8.6,0.0,1,0,ETA Belém Novo,não
+JARDIMEUROPA,Jardim Europa,4372,1876,96.09,435,,0.0,0,0,ETA Menino Deus,sim
+JARDIMFLORESTA,Jardim Floresta,2228,1078,81.11,1753,3.3,2.513,2,0,ETA São João,não confirmado
+JARDIMITU,Jardim Itu,17565,8496,91.7,6163,,0.0,3,1,ETA São João,não confirmado
+JARDIMLEOPOLDINA,Jardim Leopoldina,16151,9933,95.05,2589,,0.0,3,0,ETA São João,não confirmado
+JARDIMSABARA,Jardim Sabará,11270,5694,94.98,3815,,0.0,4,1,ETA São João,não confirmado
+MORROSANTANA,Morro Santana,21640,10793,93.99,7072,,0.0,6,2,ETA São João,não confirmado
+PARQUESANTAFE,Parque Santa Fé,6673,3547,93.61,2779,,0.0,1,1,ETA São João,não confirmado
+PASSODASPEDRAS,Passo das Pedras,14435,6347,91.22,6041,,0.0,4,0,ETA São João,não confirmado
+PITINGA,Pitinga,7012,3006,94.4,2216,,0.0,1,0,,sem ETA na lista
+SANTAROSADELIMA,Santa Rosa de Lima,34627,16017,90.38,12870,3.0,2.059,8,1,,sem ETA na lista
+SAOCAETANO,São Caetano,733,383,93.62,940,,0.0,0,0,,sem ETA na lista
+SETIMOCEU,Sétimo Céu,1166,476,96.38,557,,0.0,0,0,,sem ETA na lista
+VILASAOJOSE,Vila São José,24011,10370,91.33,9810,,0.0,12,3,ETA Menino Deus,sim

@@ -1,5 +1,4 @@
 categoria,nome,removido,mantido,distancia_m,par,motivo,endereco
-abrigos_sociais,Abrigo Cônego Paulo De Nadal,node/5404423950,way/288381201,11.9,node+way,ambos,avenida padre cacique 1372
 escolas,Colégio Sinodal do Salvador,node/11030466129,way/367324147,23.7,node+way,distancia,
 escolas,Escola Araguaia,way/466454423,way/231918978,443.0,way+way,ambos,estrada gedeon leite 780
 escolas,Escola Estadual de 1° Grau Professora Dinah Néri Pereira,node/7223276683,node/6238095094,1.7,node+node,distancia,avenida josé bonifácio 497

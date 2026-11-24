@@ -580,7 +580,3 @@ saude,relation,3410436,Hospital Santa Clara,hospital,,,-30.030927,-51.2227966,20
 saude,relation,6232100,Hospital Presidente Vargas,hospital,Avenida Independência,661,-30.0295455,-51.2147297,2026-11-09T00:50:42+00:00,avenida independência 661,False
 saude,relation,6346576,Posto de Saúde,clinic,Beco José Paris,235,-29.9886782,-51.1168542,2026-11-09T00:50:42+00:00,beco josé paris 235,False
 saude,relation,6354469,Unidade de Saúde SESC,clinic,Rua Ernesto Pellanda,830,-30.0359364,-51.1485887,2026-11-09T00:50:42+00:00,rua ernesto pellanda 830,False
-abrigos_sociais,node,8890280357,Casa do Migrante Guadalupe,social_facility,Rua Atílio Supertti,696,-30.1209347,-51.2101654,2026-11-09T02:42:28+00:00,rua atílio supertti 696,False
-abrigos_sociais,way,208171935,Pensão Nova Vida,social_facility,Rua Doutor Salvador França,1707,-30.0482956,-51.1784077,2026-11-09T02:42:28+00:00,rua doutor salvador frança 1707,False
-abrigos_sociais,way,288381201,Abrigo Cônego Paulo De Nadal,social_facility,Avenida Padre Cacique,1372,-30.0717386,-51.2374889,2026-11-09T02:42:28+00:00,avenida padre cacique 1372,False
-abrigos_sociais,way,419342137,Albergue Municipal,social_facility,Rua Comendador Azevedo,215,-30.0197814,-51.2112073,2026-11-09T02:42:28+00:00,rua comendador azevedo 215,False

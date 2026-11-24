@@ -36,9 +36,8 @@ CATEGORIAS = {
     "escolas": ['nwr["amenity"="school"](area.a);'],
     "saude": ['nwr["amenity"~"^(hospital|clinic)$"](area.a);',
               'nwr["healthcare"="hospital"](area.a);'],
-    # Abrigos PERMANENTES de assistência social (albergues, casas de acolhimento).
-    # NÃO são os abrigos temporários da enchente de 2024, que quase não existem no OSM.
-    "abrigos_sociais": ['nwr["social_facility"="shelter"](area.a);'],
+    # Abrigos sociais (social_facility=shelter) foram testados e retirados: só 5 registros no OSM,
+    # poucos demais para uma análise por bairro.
 }
 
 
