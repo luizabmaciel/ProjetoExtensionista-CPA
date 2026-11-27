@@ -1,5 +1,3 @@
-
-"""Tela 4 — Educação e exposição territorial às enchentes em Porto Alegre."""
 import geopandas as gpd
 import numpy as np
 import pandas as pd
@@ -199,7 +197,7 @@ for coluna, rotulo, cor in [("em_bairros_atingidos", "Escolas em bairros atingid
                              line=dict(color=cor, width=3)))
 fig.add_vline(x=nivel, line_color=AZUL, annotation_text=f"Selecionado: {numero(nivel, 1)} m")
 fig.add_vline(x=dados.NIVEL_MAIO_2024, line_dash="dash", line_color=CINZA,
-              annotation_text="Pico de 2024: 5,35 m", annotation_position="bottom right")
+              annotation_text="Pico de 2024: 5,35 m (Usina do Gasômetro)", annotation_position="bottom right")
 fig.update_layout(xaxis_title="Nível do Guaíba (m)", yaxis_title="Escolas", hovermode="x unified",
                   yaxis=dict(rangemode="tozero"))
 grafico(fig, 410)
@@ -211,9 +209,14 @@ pico = dados.NIVEL_MAIO_2024
 inferior, superior = 5.3, 5.4
 hist = [base_no_nivel(bairros, niveis, n) for n in [inferior, superior]]
 lo, hi = hist
-st.markdown(f"O pico registrado foi de **{numero(pico, 2)} m**. A simulação possui passos de 0,1 m; "
-            "por isso, mostramos os dois cenários vizinhos (5,3 e 5,4 m), sem interpolar resultados "
-            "ou tratá-los como danos observados em 2024.")
+st.markdown(
+    f"O pico da série compilada pela equipe foi de **{numero(pico, 2)} m**, "
+    "medido na estação 87444000 (Usina do Gasômetro), em 05/05/2024, às 05h30. "
+    "Como a simulação possui passos de 0,1 m, apresentamos os cenários de "
+    "5,3 e 5,4 m apenas como referências comparativas. "
+    "Não há garantia de que a estação e a simulação do INCT utilizem "
+    "a mesma referência altimétrica."
+)
 for col, n, b in zip(st.columns(2), [inferior, superior], hist):
     with col:
         st.markdown(f"**Cenário de {numero(n, 1)} m**")
@@ -274,9 +277,10 @@ with st.expander("Fontes, metodologia e limitações"):
 - INCT SiMAI — `inct_niveis_bairro.csv`: cenários de 3,0 a 10,0 m por bairro.
 - IBGE — Censo 2022, população dos bairros integrada em `bairros_integrado.csv`.
 - Prefeitura de Porto Alegre — `bairros_poa_2016.geojson`: malha oficial de bairros; `de_para_bairros.csv`: padronização das chaves.
-- ANA — referência de 5,35 m conforme documentação da equipe (`nivel_guaiba_fontes.md`).
+- - ANA / Hidro-Telemetria, estação 87444000 — Usina do Gasômetro; pico da série compilada pela equipe.AN.
 
 **Método:** associação espacial das coordenadas às geometrias oficiais (junção `within`, mesma abordagem do notebook da equipe). Integração pela chave de bairro. As categorias de exposição usam o percentual de prédios atingidos. A estimativa proporcional é a soma de escolas × percentual de prédios atingidos / 100. A taxa por 10 mil habitantes usa a população total do bairro.
 
-**Limitações:** cadastro colaborativo e possivelmente incompleto; todos os registros de educação da base têm o subtipo OSM `school`, sem classificação confiável por rede ou etapa de ensino. Os anos das fontes são diferentes. A simulação não identifica prédios escolares individualmente. Não há dados sobre matrículas, aulas suspensas, evasão ou notas. As faixas de exposição não constituem uma classificação oficial de risco.
+**Limitações:** cadastro colaborativo e possivelmente incompleto; todos os registros de educação da base têm o subtipo OSM `school`, sem classificação confiável por rede ou etapa de ensino. Os anos das fontes são diferentes. A simulação não identifica prédios escolares individualmente. Não há dados sobre matrículas, aulas suspensas, evasão ou notas. As faixas de exposição não constituem uma classificação oficial de risco.Não há garantia de equivalência entre o zero da régua da estação Usina do Gasômetro e a referência altimétrica utilizada na simulação do INCT. Portanto, a comparação com maio de 2024 é apenas indicativa.
 """)
+
