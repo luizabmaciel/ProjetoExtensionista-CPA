@@ -1,0 +1,75 @@
+# Python: caches e ambientes locais
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.conda/
+.python-version
+
+# Jupyter: checkpoints e arquivos temporários
+.ipynb_checkpoints/
+.ipython/
+
+# Configurações locais e credenciais
+.vscode/
+.idea/
+.env
+.env.*
+!.env.example
+
+# Dados brutos: obtidos pelos scripts de coleta
+/dados/brutos/**
+!/dados/brutos/**/
+!/dados/brutos/**/.gitkeep
+
+# Produtos geoespaciais gerados durante a preparação
+/dados/extraidos/**/*.gpkg
+/dados/extraidos/**/*.parquet
+/dados/extraidos/**/*.geoparquet
+/dados/tratados/**/*.gpkg
+/dados/tratados/**/*.parquet
+/dados/tratados/**/*.geoparquet
+
+# Arquivos temporários de download e bancos auxiliares
+*.part
+*.crdownload
+*.gpkg-journal
+*.gpkg-wal
+*.gpkg-shm
+
+# Sistema operacional
+# Ambiente virtual — nunca vai para o repositório. Cada um cria o seu
+# com o requirements.txt.
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Dados brutos: 37 MB de GeoJSON e GeoPackage que o
+# scripts/coleta_bairros.py baixa de novo em um comando. O que fica versionado
+# é o manifesto da coleta (URL, MD5, data, tamanho) — ele é a prova de onde o
+# dado veio e serve para conferir se o download de hoje é igual ao de ontem.
+dados/originais/*.geojson
+dados/originais/poageodata/
+
+# O data.json fica versionado: veio do INCT, nenhum script baixa, e sem ele a
+# limpeza não roda. São 1,1 MB.
+
+# Editores / sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+# ambiente virtual e caches do Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
