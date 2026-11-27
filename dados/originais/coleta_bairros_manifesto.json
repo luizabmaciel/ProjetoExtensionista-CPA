@@ -1,0 +1,117 @@
+{
+  "projeto": "Projeto Extensionista INCT SiMAI — Fase 2",
+  "responsavel": "Gabriel Erich Franco",
+  "datahora_utc": "2026-11-09T11:48:15+00:00",
+  "bases": [
+    {
+      "base": "bairros_poa_2016",
+      "titulo": "Malha oficial dos bairros de Porto Alegre",
+      "fonte": {
+        "instituicao": "Prefeitura Municipal de Porto Alegre",
+        "servico": "01_PUBLICACOES/bairros_2016/MapServer/0",
+        "url": "https://gis-smamus.portoalegre.rs.gov.br/server/rest/services/01_PUBLICACOES/bairros_2016/MapServer/0/query?where=1%3D1&outFields=*&outSR=4674&f=geojson",
+        "licenca": "dado público municipal; exige citação da Prefeitura",
+        "observacao": "mesma malha divulgada pelo ObservaPOA; divisão de 2016"
+      },
+      "coleta": {
+        "url": "https://gis-smamus.portoalegre.rs.gov.br/server/rest/services/01_PUBLICACOES/bairros_2016/MapServer/0/query?where=1%3D1&outFields=*&outSR=4674&f=geojson",
+        "arquivo": "dados/originais/bairros_poa_2016.geojson",
+        "datahora_utc": "2026-11-09T11:48:15+00:00",
+        "origem_cache": false,
+        "status": 200,
+        "bytes": 14544304,
+        "md5": "047050230bd2c2f0a2efbbdb8d3c27ef",
+        "mensagem": "baixado",
+        "robots": "robots.txt lido em https://gis-smamus.portoalegre.rs.gov.br/robots.txt"
+      },
+      "resumo": {
+        "n_feicoes": 128,
+        "crs": {
+          "type": "name",
+          "properties": {
+            "name": "EPSG:4674"
+          }
+        },
+        "excedeu_limite": false,
+        "campos": [
+          "data_edicao",
+          "nome",
+          "objectid",
+          "objectid_1",
+          "st_area(shape)",
+          "st_length(shape)"
+        ],
+        "tipos_geometria": [
+          "Polygon"
+        ]
+      }
+    },
+    {
+      "base": "poageodata",
+      "titulo": "POAGEODATA — dados geoespaciais por bairro de Porto Alegre",
+      "fonte": {
+        "instituicao": "Giovani Longo Rosa (UFRGS/PROPUR), via Zenodo",
+        "doi": "10.5281/zenodo.14807279",
+        "url": "https://zenodo.org/records/14807279",
+        "licenca": "CC BY 4.0",
+        "observacao": "v1.0 de 07/02/2025; quatro GeoPackages separados, SIRGAS 2000 UTM 22S; base Censo 2022 e mortalidade 2022"
+      },
+      "coleta": {
+        "basico": {
+          "url": "https://zenodo.org/records/14807279/files/POA_bairros_basico_SIRGAS2000_22S.gpkg?download=1",
+          "arquivo": "dados/originais/poageodata/POA_bairros_basico_SIRGAS2000_22S.gpkg",
+          "datahora_utc": "2026-11-09T11:48:29+00:00",
+          "origem_cache": false,
+          "status": 200,
+          "bytes": 5763072,
+          "md5": "68766507a4deeef0e4d1255ad5997b80",
+          "mensagem": "baixado",
+          "robots": "robots.txt lido em https://zenodo.org/robots.txt",
+          "md5_confere": true
+        },
+        "demografia_simplificada": {
+          "url": "https://zenodo.org/records/14807279/files/POA_bairros_demografia_simplificada_SIRGAS2000_22S.gpkg?download=1",
+          "arquivo": "dados/originais/poageodata/POA_bairros_demografia_simplificada_SIRGAS2000_22S.gpkg",
+          "datahora_utc": "2026-11-09T11:48:44+00:00",
+          "origem_cache": false,
+          "status": 200,
+          "bytes": 5775360,
+          "md5": "bb72a8e59c23da14bfba3feb7a73b9b4",
+          "mensagem": "baixado",
+          "robots": "robots.txt lido em https://zenodo.org/robots.txt",
+          "md5_confere": true
+        },
+        "demografia_expandida": {
+          "url": "https://zenodo.org/records/14807279/files/POA_bairros_demografia_expandida_SIRGAS2000_22S.gpkg?download=1",
+          "arquivo": "dados/originais/poageodata/POA_bairros_demografia_expandida_SIRGAS2000_22S.gpkg",
+          "datahora_utc": "2026-11-09T11:49:03+00:00",
+          "origem_cache": false,
+          "status": 200,
+          "bytes": 5816320,
+          "md5": "3da8f4adfdc176c9392d83e01b449d0a",
+          "mensagem": "baixado",
+          "robots": "robots.txt lido em https://zenodo.org/robots.txt",
+          "md5_confere": true
+        },
+        "mortalidade": {
+          "url": "https://zenodo.org/records/14807279/files/POA_bairros_mortalidade_SIRGAS2000_22S.gpkg?download=1",
+          "arquivo": "dados/originais/poageodata/POA_bairros_mortalidade_SIRGAS2000_22S.gpkg",
+          "datahora_utc": "2026-11-09T11:49:11+00:00",
+          "origem_cache": false,
+          "status": 200,
+          "bytes": 5775360,
+          "md5": "821038b8f06ae1a9fb28625b7111f465",
+          "mensagem": "baixado",
+          "robots": "robots.txt lido em https://zenodo.org/robots.txt",
+          "md5_confere": true
+        }
+      },
+      "resumo": {
+        "basico": 5763072,
+        "demografia_simplificada": 5775360,
+        "demografia_expandida": 5816320,
+        "mortalidade": 5775360
+      }
+    }
+  ]
+}
