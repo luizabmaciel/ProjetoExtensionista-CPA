@@ -6,7 +6,7 @@ import dados
 from comum import AZUL, CINZA, LARANJA, numero, linhas_do_nivel
 
 TETO = 10.0          # maior nível simulado pelo INCT
-NIVEL_LEITURA = 5.3  # nível usado no bloco de leitura crítica
+NIVEL_LEITURA = 5.4  # passo simulado mais próximo do pico revisado de 2024 (5,37 m)
 
 
 def violacoes_monotonia(niveis):
@@ -199,8 +199,6 @@ atingido nesse nível; bairros sem nenhum prédio atingido até 10,0 m são marc
 
 **Limitações:** a simulação não representa diques, muros, comportas nem casas de bomba, e não informa
 profundidade nem duração do alagamento. O piso de 3,0 m e o teto de 10,0 m são limites da simulação, não
-do fenômeno. A cota é um nível do Guaíba conforme a simulação do INCT; a régua de referência não está
-confirmada na documentação de que dispomos. A série observada de maio de 2024 foi medida na Usina do
-Gasômetro (estação 87444000). Enquanto a equivalência entre as duas réguas não for verificada, a
-comparação entre cenário simulado e nível observado tem margem não quantificada.
+do fenômeno. A cota refere-se ao nível do Guaíba na régua do Cais Mauá, mesma referência das manchas de
+inundação do IPH. O pico de maio de 2024 nessa régua é 5,37 m, conforme revisão do SGB.
 """)

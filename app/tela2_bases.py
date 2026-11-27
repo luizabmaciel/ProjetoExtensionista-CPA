@@ -50,7 +50,7 @@ linha.add_vline(x=nivel, line_width=1, line_color=CINZA,
                 annotation_text=f"Escolhido: {numero(nivel, 1)} m", annotation_position="top right",
                 annotation_font_color=CINZA)
 linha.add_vline(x=dados.NIVEL_MAIO_2024, line_width=1, line_dash="dash", line_color=CINZA,
-                annotation_text="Maio de 2024: 5,35 m", annotation_position="bottom right",
+                annotation_text=f"Maio de 2024: {numero(dados.NIVEL_MAIO_2024, 2)} m", annotation_position="bottom right",
                 annotation_font_color=CINZA)
 linha.update_layout(height=380, margin=dict(l=0, r=10, t=30, b=0), separators=",.", hovermode="x unified",
                     xaxis_title="Nível do Guaíba (m)", yaxis_title=f"{rotulo} (quantidade)",

@@ -9,7 +9,7 @@ As notas do Dmae dizem o DIA e o PERÍODO em que cada ETA parou (ex.: "manhã de
    isso dá uma FAIXA de nível em que a ETA parou. O meio da janela dá a estimativa central.
 4. Sem a série, só usamos a única leitura com horário que as fontes trazem (5,09 m às 12h de 04/05).
 
-Suposição: o nível subiu continuamente durante as paradas (o pico de 5,35 m veio depois).
+Suposição: o nível subiu continuamente durante as paradas (o pico de 5,35 m na régua do Gasômetro veio depois).
 """
 import numpy as np
 import pandas as pd
@@ -20,7 +20,7 @@ TURNOS = {"madrugada": (0, 6), "manhã": (6, 12), "tarde": (12, 18), "fim da tar
 
 # única leitura de nível com horário nas fontes (nota da Prefeitura F13, régua Sema/ANA)
 LEITURA_CONHECIDA = (pd.Timestamp("2024-05-04 12:00"), 5.09)
-RECORDE_2024 = 5.35
+RECORDE_2024 = 5.35 # régua emergencial do Gasômetro (87444000), mesma da série horária
 
 # qual evento de cada ETA marca a parada ligada ao nível do rio, e a ressalva de cada uma
 EVENTO_LIMIAR = {

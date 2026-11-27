@@ -74,7 +74,7 @@ with col_curva:
                                name="Nível escolhido",
                                hovertemplate="Nível escolhido, %{x:.1f} m: %{y:,.0f} pessoas<extra></extra>"))
     curva.add_vline(x=dados.NIVEL_MAIO_2024, line_width=1, line_dash="dash", line_color=CINZA,
-                    annotation_text="Maio de 2024: 5,35 m", annotation_position="top left",
+                    annotation_text=f"Maio de 2024: {numero(dados.NIVEL_MAIO_2024, 2)} m", annotation_position="top left",
                     annotation_font_color=CINZA)
     curva.update_layout(height=420, showlegend=False, margin=dict(l=0, r=10, t=30, b=0),
                         xaxis_title="Nível do Guaíba (m)", yaxis_title="Pessoas afetadas (estimativa)",

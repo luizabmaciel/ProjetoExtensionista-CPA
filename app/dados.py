@@ -15,7 +15,7 @@ EXT = RAIZ / "dados" / "externos"
 PROC = RAIZ / "dados" / "processados"
 ORIG = RAIZ / "dados" / "originais"
 
-NIVEL_MAIO_2024 = 5.35   # maior marca, estação 87444000 (Usina do Gasômetro).
+NIVEL_MAIO_2024 = 5.37   # pico revisado pelo SGB, referência Cais Mauá (régua da simulação)
 PISO =  3.0 # menor nível simulado pelo INCT
 
 @st.cache_data
