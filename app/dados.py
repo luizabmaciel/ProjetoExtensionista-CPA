@@ -15,8 +15,8 @@ EXT = RAIZ / "dados" / "externos"
 PROC = RAIZ / "dados" / "processados"
 ORIG = RAIZ / "dados" / "originais"
 
-NIVEL_MAIO_2024 = 5.35   # maior marca do Guaíba em Porto Alegre (maio de 2024)
-
+NIVEL_MAIO_2024 = 5.35   # maior marca, estação 87444000 (Usina do Gasômetro).
+PISO =  3.0 # menor nível simulado pelo INCT
 
 @st.cache_data
 def niveis_inct():
@@ -45,6 +45,31 @@ def malha_bairros_geojson():
 @st.cache_data
 def bairros_integrado():
     return pd.read_csv(PROC / "integracao" / "bairros_integrado.csv")
+
+def perfil_vulnerabilidade(bairros, niveis):
+    """Classifica cada bairro pela cota em que começa a alagar.
+
+    Três situações distintas, que NÃO podem virar o mesmo número:
+      - 'censurado'  : já alagado no piso da simulação (3,0 m). A cota real é
+                       desconhecida: só sabemos que é <= 3,0 m.
+      - 'medido'     : começa a alagar em algum nível acima do piso.
+      - 'nunca alaga': nenhum prédio atingido até 10,0 m.
+    """
+    base = bairros[["chave", "bairro", "pessoas", "escolas",
+                    "inct_nivel_primeiro_alagamento_m"]].copy()
+    base = base.rename(columns={"inct_nivel_primeiro_alagamento_m": "cota_inicio"})
+
+    piso = niveis[niveis.nivel_m.round(1) == PISO].set_index("chave")
+    base["pct_no_piso"] = base.chave.map(piso.pct_predios)
+
+    base["situacao"] = "medido"
+    base.loc[base.cota_inicio.isna(), "situacao"] = "nunca alaga"
+    base.loc[base.cota_inicio.eq(PISO), "situacao"] = "censurado"
+
+    teto = niveis[niveis.nivel_m.round(1) == 10.0].set_index("chave")
+    base["pct_em_10m"] = base.chave.map(teto.pct_predios)
+    return base.sort_values(["cota_inicio", "pct_no_piso"],
+                            ascending=[True, False], na_position="last")
 
 
 @st.cache_data
