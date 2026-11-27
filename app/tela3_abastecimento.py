@@ -144,7 +144,9 @@ with st.expander("Como a estimativa é feita"):
 
 **Suposições:** o nível subiu continuamente enquanto as ETAs paravam; o que aconteceu em 2024 se repetiria num
 nível igual. **Limites:** algumas ETAs atendem só parte dos bairros listados; vilas que não são bairros oficiais
-ficam de fora; acima de 5,35 m na régua do Gasômetro não há observação.
+ficam de fora; acima de 5,35 m na régua do Gasômetro não há observação; e os limiares vêm
+dessa régua, enquanto o nível selecionado acima é o da simulação, referenciado ao Cais Mauá —
+a equivalência entre as duas não está estabelecida, então a situação das ETAs é indicativa.
 
 Fontes: notas do Dmae e da Prefeitura de Porto Alegre listadas na Tela 2; nível do Guaíba:
 ANA, estação Usina do Gasômetro baixada do [HidroWeb](https://www.snirh.gov.br/hidroweb/serieshistoricas) e
