@@ -68,3 +68,8 @@ dados/originais/poageodata/
 .idea/
 .DS_Store
 Thumbs.db
+# ambiente virtual e caches do Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

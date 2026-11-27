@@ -1,0 +1,120 @@
+eta,nome_na_fonte,chave,metodo,parou_por_agua_2024
+ETA Moinhos de Vento,Auxiliadora,AUXILIADORA,nome exato,True
+ETA Moinhos de Vento,Azenha,AZENHA,nome exato,True
+ETA Moinhos de Vento,Bela Vista,BELAVISTA,nome exato,True
+ETA Moinhos de Vento,Bom Fim,BOMFIM,nome exato,True
+ETA Moinhos de Vento,Centro Histórico,CENTROHISTORICO,nome exato,True
+ETA Moinhos de Vento,Cidade Baixa,CIDADEBAIXA,nome exato,True
+ETA Moinhos de Vento,Farroupilha,FARROUPILHA,nome exato,True
+ETA Moinhos de Vento,Floresta,FLORESTA,nome exato,True
+ETA Moinhos de Vento,Independência,INDEPENDENCIA,nome exato,True
+ETA Moinhos de Vento,Jardim Botânico,JARDIMBOTANICO,nome exato,True
+ETA Moinhos de Vento,Menino Deus,MENINODEUS,nome exato,True
+ETA Moinhos de Vento,Moinhos de Vento,MOINHOSDEVENTO,nome exato,True
+ETA Moinhos de Vento,Mont’Serrat,MONTSERRAT,nome exato,True
+ETA Moinhos de Vento,Partenon,PARTENON,nome exato,True
+ETA Moinhos de Vento,Petrópolis,PETROPOLIS,nome exato,True
+ETA Moinhos de Vento,Praia de Belas,PRAIADEBELAS,nome exato,True
+ETA Moinhos de Vento,Rio Branco,RIOBRANCO,nome exato,True
+ETA Moinhos de Vento,Santa Cecília,SANTACECILIA,nome exato,True
+ETA Moinhos de Vento,Santana,SANTANA,nome exato,True
+ETA Moinhos de Vento,São João,SAOJOAO,nome exato,True
+ETA Moinhos de Vento,Três Figueiras,TRESFIGUEIRAS,nome exato,True
+ETA São João,Jardim Planalto,,sem bairro oficial,
+ETA São João,Passo das Pedras,PASSODASPEDRAS,nome exato,
+ETA São João,Costa e Silva,COSTAESILVA,nome exato,
+ETA São João,Parque Santa Fé,PARQUESANTAFE,nome exato,
+ETA São João,Chácara das Pedras,CHACARADASPEDRAS,nome exato,
+ETA São João,Três Figueiras,TRESFIGUEIRAS,nome exato,
+ETA São João,Rubem Berta,RUBEMBERTA,nome exato,
+ETA São João,Protásio Alves,,sem bairro oficial,
+ETA São João,Loteamento Timbaúva,,sem bairro oficial,
+ETA São João,Jardim Leopoldina,JARDIMLEOPOLDINA,nome exato,
+ETA São João,Jardim Ipu,,sem bairro oficial,
+ETA São João,Alto Petrópolis,,sem bairro oficial,
+ETA São João,Mário Quintana,MARIOQUINTANA,nome exato,
+ETA São João,Chácara da Fumaça,,sem bairro oficial,
+ETA São João,Vila Safira,,sem bairro oficial,
+ETA São João,Sarandi,SARANDI,nome exato,
+ETA São João,Morro Santana,MORROSANTANA,nome exato,
+ETA São João,Jardim Itu,JARDIMITU,nome exato,
+ETA São João,Jardim Sabará,JARDIMSABARA,nome exato,
+ETA São João,Cristo Redentor,CRISTOREDENTOR,nome exato,
+ETA São João,Passo da Areia,PASSODAAREIA,nome exato,
+ETA São João,Jardim Lindoia,JARDIMLINDOIA,nome exato,
+ETA São João,Boa Vista,BOAVISTA,nome exato,
+ETA São João,Vila Ipiranga,VILAIPIRANGA,nome exato,
+ETA São João,Vila Floresta,JARDIMFLORESTA,de-para manual (a confirmar),
+ETA São João,São Sebastião,SAOSEBASTIAO,nome exato,
+ETA São João,Anchieta,ANCHIETA,nome exato,
+ETA São João,Auxiliadora,AUXILIADORA,nome exato,
+ETA São João,Higienópolis,HIGIENOPOLIS,nome exato,
+ETA São João,Humaitá,HUMAITA,nome exato,
+ETA São João,São Pedro,JARDIMSAOPEDRO,de-para manual (a confirmar),
+ETA São João,Navegantes,NAVEGANTES,nome exato,
+ETA São João,São Geraldo,SAOGERALDO,nome exato,
+ETA São João,São João,SAOJOAO,nome exato,
+ETA São João,Vila Farrapos,FARRAPOS,de-para manual (a confirmar),
+ETA Menino Deus,Agronomia,AGRONOMIA,nome exato,True
+ETA Menino Deus,Alto Teresópolis,TERESOPOLIS,de-para manual (a confirmar),True
+ETA Menino Deus,Aparício Borges,CELAPARICIOBORGES,de-para manual (a confirmar),True
+ETA Menino Deus,Azenha,AZENHA,nome exato,True
+ETA Menino Deus,Assunção,VILAASSUNCAO,de-para manual (a confirmar),True
+ETA Menino Deus,Belém Velho,BELEMVELHO,nome exato,True
+ETA Menino Deus,Camaquã,CAMAQUA,nome exato,True
+ETA Menino Deus,Cavalhada,CAVALHADA,nome exato,True
+ETA Menino Deus,Centro,CENTROHISTORICO,de-para manual (a confirmar),True
+ETA Menino Deus,Cidade Baixa,CIDADEBAIXA,nome exato,True
+ETA Menino Deus,Cristal,CRISTAL,nome exato,True
+ETA Menino Deus,Intercap,,sem bairro oficial,True
+ETA Menino Deus,Jardim Botânico,JARDIMBOTANICO,nome exato,True
+ETA Menino Deus,Jardim Carvalho,JARDIMCARVALHO,nome exato,True
+ETA Menino Deus,Jardim do Salso,JARDIMDOSALSO,nome exato,True
+ETA Menino Deus,Jardim Europa,JARDIMEUROPA,nome exato,True
+ETA Menino Deus,Medianeira,MEDIANEIRA,nome exato,True
+ETA Menino Deus,Menino Deus,MENINODEUS,nome exato,True
+ETA Menino Deus,Nonoai,NONOAI,nome exato,True
+ETA Menino Deus,Partenon,PARTENON,nome exato,True
+ETA Menino Deus,Parque Charruas,,sem bairro oficial,True
+ETA Menino Deus,Petrópolis,PETROPOLIS,nome exato,True
+ETA Menino Deus,Praia de Belas,PRAIADEBELAS,nome exato,True
+ETA Menino Deus,Santana,SANTANA,nome exato,True
+ETA Menino Deus,Santa Tereza,SANTATEREZA,nome exato,True
+ETA Menino Deus,São Jorge,,sem bairro oficial,True
+ETA Menino Deus,São José,VILASAOJOSE,de-para manual (a confirmar),True
+ETA Menino Deus,Santo Antônio,SANTOANTONIO,nome exato,True
+ETA Menino Deus,Tristeza,TRISTEZA,nome exato,True
+ETA Menino Deus,Vila Campo da Tuca,,sem bairro oficial,True
+ETA Menino Deus,Vila Conceição,VILACONCEICAO,nome exato,True
+ETA Menino Deus,Vila dos Comerciários,,sem bairro oficial,True
+ETA Menino Deus,Vila dos Sargentos,,sem bairro oficial,True
+ETA Menino Deus,Vila Alto Erechim,,sem bairro oficial,True
+ETA Menino Deus,Vila João Pessoa,VILAJOAOPESSOA,nome exato,True
+ETA Menino Deus,Vila Nova,VILANOVA,nome exato,True
+ETA Menino Deus,Vila Topázio,,sem bairro oficial,True
+ETA Tristeza,Ipanema,IPANEMA,nome exato,True
+ETA Tristeza,Pedra Redonda,PEDRAREDONDA,nome exato,True
+ETA Tristeza,Guarujá,GUARUJA,nome exato,True
+ETA Tristeza,Jardim Isabel,JARDIMISABEL,nome exato,True
+ETA Tristeza,Espírito Santo,ESPIRITOSANTO,nome exato,True
+ETA Tristeza,Praça Moema,,sem bairro oficial,True
+ETA Tristeza,Vila dos Sargentos,,sem bairro oficial,True
+ETA Tristeza,Serraria,SERRARIA,nome exato,True
+ETA Tristeza,Parque Bahamas,,sem bairro oficial,True
+ETA Tristeza,Jardim Verde Ipanema,,sem bairro oficial,True
+ETA Belém Novo,Aberta dos Morros,ABERTADOSMORROS,nome exato,False
+ETA Belém Novo,Agronomia,AGRONOMIA,nome exato,False
+ETA Belém Novo,Belém Novo,BELEMNOVO,nome exato,False
+ETA Belém Novo,Belém Velho,BELEMVELHO,nome exato,False
+ETA Belém Novo,Boa Vista do Sul,BOAVISTADOSUL,nome exato,False
+ETA Belém Novo,Campo Novo,CAMPONOVO,nome exato,False
+ETA Belém Novo,Cascata,CASCATA,nome exato,False
+ETA Belém Novo,Chapéu do Sol,CHAPEUDOSOL,nome exato,False
+ETA Belém Novo,Espírito Santo,ESPIRITOSANTO,nome exato,False
+ETA Belém Novo,Extrema,EXTREMA,nome exato,False
+ETA Belém Novo,Hípica,HIPICA,nome exato,False
+ETA Belém Novo,Ipanema,IPANEMA,nome exato,False
+ETA Belém Novo,Lageado,LAGEADO,nome exato,False
+ETA Belém Novo,Lomba do Pinheiro,LOMBADOPINHEIRO,nome exato,False
+ETA Belém Novo,Restinga,RESTINGA,nome exato,False
+ETA Ilhas,Arquipélago,ARQUIPELAGO,nome exato,True

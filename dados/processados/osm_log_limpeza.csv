@@ -1,0 +1,5 @@
+etapa,problema,onde,registros_afetados,total_antes,total_depois,decisao,justificativa
+A,"duplicata (mesmo nome e categoria, a menos de 500 m ou com mesmo endereço)","escolas e saude; escolas=5, saude=2",7,588,581,"corrigir: remover o duplicado (< 500 m ou mesmo endereço), mantendo o polígono",é a mesma instalação; contar duas vezes infla o indicador por bairro e por nível
+B,registro sem nome,escolas e saude; ver tabela da etapa 3,20,581,581,manter e sinalizar: nome='(sem nome)' e coluna sem_nome=True,o ponto tem coordenada e categoria válidas e pode estar em área alagada; descartar subestimaria a contagem
+B.1,sem nome agrupados a menos de 100 m (possível mesmo complexo),ver etapa 3.1,7,581,581,manter e avisar (não fundir),sem nome não há evidência segura de que sejam o mesmo estabelecimento
+C,categoria saude mistura hospital e clinic,saude,148,581,581,manter a categoria e preservar a coluna subtipo (hospital/clinic),permite filtrar no dashboard sem refazer a coleta
