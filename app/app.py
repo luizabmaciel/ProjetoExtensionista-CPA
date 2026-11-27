@@ -11,6 +11,7 @@ pagina = st.navigation([
     st.Page("tela1_simulacao.py", title="1. Simulação do INCT", icon="🌊", default=True),
     st.Page("tela2_bases.py", title="2. Equipamentos e abastecimento", icon="🏫"),
     st.Page("tela3_abastecimento.py", title="3. Abastecimento de água", icon="🚰"),
+    st.Page("tela4_educacao.py", title="4. Educação", icon="📊"),
 ])
 
 st.sidebar.caption("Projeto Extensionista · Coleta, Preparação e Análise de Dados · PUCRS")
